@@ -8,7 +8,7 @@
 5. cd into .dotfiles
 6. run `stow -nvSt ~ *` to see what changes will be made
 7. if all looks okay run `stow -vSt ~ *`
-
+8. change cursor to I-beam: Terminal -> right click -> preferences -> Cursor shape -> I beam
 
 ## Linking and unlinking in stow:
 
