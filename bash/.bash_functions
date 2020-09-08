@@ -17,3 +17,8 @@ function gacm(){
     git add "$1"
 	git commit -m "$2"
 }
+
+# compile R
+function Rcomp(){
+    cat "$1" | R --save -q | less
+}
