@@ -15,10 +15,17 @@ function latex() {
 # add a file and commit with a message
 function gacm(){
     git add "$1"
-	git commit -m "$2"
+    git commit -m "$2"
 }
 
 # compile R
 function Rcomp(){
-    cat "$1" | R --save -q | less
+    cat "$1" | R --no-save -q | less
 }
+
+# load a problem file and write sol to second argument
+function runscip(){
+    command="read $1 optimize write solution $2 q"
+    scip -q -c "$command"
+}
+
