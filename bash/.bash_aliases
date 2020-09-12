@@ -22,6 +22,13 @@ alias gh="history|grep"
 # compile c++
 alias c++="g++ -std=c++11 -g -O2 -Wconversion -Wshadow -Wall -Wextra -D_GLIBCXX_DEBUG -c" 
 
+# sudo comands
+alias si="sudo apt-get install "
+alias siy="sudo apt-get install -y "
+
+# find remaping
+alias find="find . -name "
+
 # git related aliases
 alias gss="git status"
 alias gc="git commit "
