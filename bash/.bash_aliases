@@ -13,7 +13,7 @@ alias .....="cd ../../../.."
 # remove dir
 alias rmd="rm -rf"
 
-# open pdf
+# open smth using default program (ex: pdf, folder, etc)
 alias open=xdg-open
 
 # find a command in history
