@@ -27,5 +27,6 @@ function Rcomp(){
 function runscip(){
     command="read $1 optimize write solution $2 q"
     scip -q -c "$command"
+    cat "$2" | grep objective
 }
 
