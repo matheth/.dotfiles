@@ -9,6 +9,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+alias cdD="cd ~/Desktop"
 
 # remove dir
 alias rmd="rm -rf"
@@ -40,3 +41,4 @@ alias gps="git push"
 alias grm="git rm --cached "
 alias gg="git graph"
 alias gai="git add -i "
+alias gd="git diff"
