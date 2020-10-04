@@ -1,4 +1,5 @@
 alias aliases="cat ~/.bash_aliases | less"
+alias functions="cat ~/.bash_functions | less"
 
 # ls aliases
 alias ll="ls -l"
