@@ -30,6 +30,9 @@ alias siy="sudo apt-get install -y "
 # find remaping
 alias find="find . -name "
 
+# valgrind remapping
+alias valgrind="valgrind --leak-check=full "
+
 # git related aliases
 alias gss="git status"
 alias gc="git commit "
