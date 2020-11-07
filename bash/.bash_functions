@@ -18,11 +18,9 @@ function gacm(){
     git commit -m "$2"
 }
 
-
 # add a file, commit with a message, and push
 function gacmp(){
-    git add "$1"
-    git commit -m "$2"
+	gacm "$1" "$2"
     git push
 }
 
