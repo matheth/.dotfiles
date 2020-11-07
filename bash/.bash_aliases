@@ -46,3 +46,7 @@ alias grm="git rm --cached "
 alias gg="git graph"
 alias gai="git add -i "
 alias gd="git diff"
+alias gcl="git clone"
+
+# cd into current uba semester folder
+alias cduba="cd ~/Desktop/UBA/2020/2C"
