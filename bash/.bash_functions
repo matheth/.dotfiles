@@ -18,6 +18,14 @@ function gacm(){
     git commit -m "$2"
 }
 
+
+# add a file, commit with a message, and push
+function gacmp(){
+    git add "$1"
+    git commit -m "$2"
+    git push
+}
+
 # compile R
 function Rcomp(){
     cat "$1" | R --no-save -q | less
