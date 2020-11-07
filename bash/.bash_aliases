@@ -46,6 +46,9 @@ alias grm="git rm --cached "
 alias gg="git graph"
 alias gai="git add -i "
 alias gd="git diff"
+alias gd1="gd HEAD~1"
+alias gd2="gd HEAD~2"
+alias gd3="gd HEAD~3"
 alias gcl="git clone"
 
 # cd into current uba semester folder
