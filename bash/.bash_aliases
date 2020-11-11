@@ -1,11 +1,11 @@
 alias aliases="vim ~/.bash_aliases"
 alias functions="vim ~/.bash_functions"
 
-# ls aliases
+# ls 
 alias ll="ls -l"
 alias la="ls -lah"
 
-# some cd aliases
+# cd 
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -15,7 +15,7 @@ alias cdD="cd ~/Desktop"
 # remove dir
 alias rmd="rm -rf"
 
-# open smth using default program (ex: pdf, folder, etc)
+# default open 
 alias open=xdg-open
 
 # find a command in history
