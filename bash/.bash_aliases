@@ -48,4 +48,4 @@ alias gd3="gd HEAD~3"
 alias gcl="git clone"
 
 # cd into current uba semester folder
-alias cduba="cd ~/Desktop/UBA/2020/2C"
+alias cduba="cd ~/Desktop/UBA/2021/1C"

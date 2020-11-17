@@ -24,15 +24,3 @@ function gacmp(){
     git push
 }
 
-# compile R
-function Rcomp(){
-    cat "$1" | R --no-save -q | less
-}
-
-# load a problem file and write sol to second argument
-function runscip(){
-    command="read $1 optimize write solution $2 q"
-    scip -q -c "$command"
-    cat "$2" | grep objective
-}
-
