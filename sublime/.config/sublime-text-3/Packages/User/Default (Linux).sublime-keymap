@@ -5,5 +5,7 @@
 	{ "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
 	{ "keys": ["ctrl+shift+c"], "command": "cancel_build"},
 	{ "keys": ["ctrl+shift+<"], "command": "toggle_side_bar"},
-    { "keys": ["alt+¿"], "command": "toggle_terminus_panel"}
+    { "keys": ["alt+¿"], "command": "toggle_terminus_panel"},
+    { "keys": ["ctrl+["], "command": "fold" },
+    { "keys": ["ctrl+]"], "command": "unfold" },
 ]
