@@ -5,11 +5,12 @@
 2. cd into home directory
 3. `rm -rf .dotfiles` if there is one
 4. clone repository
-5. cd into .dotfiles
-6. run rm README.md
-7. run `stow -nvSt ~ *` to see what changes will be made
-8. if all looks okay run `stow -vSt ~ *`
-9. change cursor to I-beam: Terminal -> right click -> preferences -> Cursor shape -> I beam
+5. run `rm .bashrc`
+6. cd into .dotfiles
+7. run `rm README.md`
+8. run `stow -nvSt ~ *` to see what changes will be made
+9. if all looks okay run `stow -vSt ~ *`
+10. change cursor to I-beam: Terminal -> right click -> preferences -> Cursor shape -> I beam
 
 ## Linking and unlinking in stow:
 
