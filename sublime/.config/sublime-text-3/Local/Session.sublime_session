@@ -1,0 +1,534 @@
+{
+	"folder_history":
+	[
+		"/home/matheth/Desktop/advent_of_code",
+		"/home/matheth/Desktop/test/web"
+	],
+	"last_version": 3211,
+	"last_window_id": 3,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 0.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"color",
+						"Color Picker"
+					],
+					[
+						"colo",
+						"Color Picker"
+					],
+					[
+						"enable",
+						"Package Control: Enable Package"
+					],
+					[
+						"upgrade",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"cool",
+						"Color Picker"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"colorp",
+						"Color Picker"
+					],
+					[
+						"packa",
+						"Package Control: Remove Package"
+					],
+					[
+						"list paca",
+						"Package Control: List Packages"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"packages",
+						"Package Control: List Packages"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/matheth/Desktop/test/bash/change-background.sh",
+				"/home/matheth/Desktop/test/bash/asdasd.txt",
+				"/home/matheth/Desktop/test/web/index.html",
+				"/home/matheth/Desktop/test/web/styles.css",
+				"/home/matheth/Desktop/advent_of_code/2020/day4/main.py"
+			],
+			"find":
+			{
+				"height": 28.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"##",
+					"55729"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 28.0
+			},
+			"input":
+			{
+				"height": 46.0
+			},
+			"menu_visible": true,
+			"output.Terminus":
+			{
+				"height": 333.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 52.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 228.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 0.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"instruction",
+						"INSTRUCTIONS"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/matheth/Desktop/advent_of_code/2015/day3/main.py",
+					"settings":
+					{
+						"buffer_size": 611,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "Packages/User/Python3.sublime-build",
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/Python/Python.sublime-build",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							"Syntax Check"
+						],
+						[
+							"Packages/User/Python3.sublime-build",
+							""
+						]
+					],
+					[
+						"Packages/User/Python3.sublime-build",
+						""
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"disable",
+						"Package Control: Disable Package"
+					],
+					[
+						"enable",
+						"Package Control: Enable Package"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"color",
+						"Color Picker"
+					],
+					[
+						"colo",
+						"Color Picker"
+					],
+					[
+						"upgrade",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"cool",
+						"Color Picker"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"colorp",
+						"Color Picker"
+					],
+					[
+						"packa",
+						"Package Control: Remove Package"
+					],
+					[
+						"list paca",
+						"Package Control: List Packages"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"packages",
+						"Package Control: List Packages"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/home/matheth/Desktop/advent_of_code",
+				"/home/matheth/Desktop/advent_of_code/2015",
+				"/home/matheth/Desktop/advent_of_code/2015/day2",
+				"/home/matheth/Desktop/advent_of_code/2015/day3"
+			],
+			"file_history":
+			[
+				"/home/matheth/Desktop/advent_of_code/2015/day2/main.py",
+				"/home/matheth/Desktop/advent_of_code/2015/day2/input",
+				"/home/matheth/Desktop/advent_of_code/2015/day1/main.py",
+				"/home/matheth/Desktop/advent_of_code/2019/day1/main.py",
+				"/home/matheth/Desktop/advent_of_code/2015/day1/input",
+				"/home/matheth/Desktop/advent_of_code/2015/day1.py",
+				"/home/matheth/Desktop/test/bash/change-background.sh",
+				"/home/matheth/Desktop/test/bash/asdasd.txt",
+				"/home/matheth/Desktop/test/web/index.html",
+				"/home/matheth/Desktop/test/web/styles.css",
+				"/home/matheth/Desktop/advent_of_code/2020/day4/main.py"
+			],
+			"find":
+			{
+				"height": 28.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"robo",
+					"santa",
+					"0"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/home/matheth/Desktop/advent_of_code"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/matheth/Desktop/advent_of_code/2015/day3/main.py",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 611,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										611,
+										611
+									]
+								],
+								"settings":
+								{
+									"open_with_edit": true,
+									"syntax": "Packages/Python/Python.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 29.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 28.0
+			},
+			"input":
+			{
+				"height": 46.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.Terminus":
+			{
+				"height": 333.0
+			},
+			"output.exec":
+			{
+				"height": 372.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,1,0,0,0,0,0,0,0,1366,768",
+			"project": "",
+			"replace":
+			{
+				"height": 52.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 228.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 3,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}
