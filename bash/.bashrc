@@ -123,4 +123,18 @@ if ! shopt -oq posix; then
   fi
 fi
 
+command_not_found_handle() {
+  if  [ -x /usr/lib/command-not-found ]; then
+     /usr/lib/command-not-found -- "$1"
+     return $?
+  else
+     return 127
+  fi
+}
+
+
 export PATH=$PATH:~/Desktop/scipopt/bin
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

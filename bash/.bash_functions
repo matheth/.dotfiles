@@ -24,3 +24,20 @@ function gacmp(){
     git push
 }
 
+# change desktop background image
+function set-background-desktop(){
+    # to use add an image to below path and call
+    # set-background-desktop [name-of-image]
+    var="file:///home/matheth/Pictures/desktop-wallpapers/$1"
+    echo $var
+    gsettings set org.gnome.desktop.background picture-uri "$var"
+}
+
+# change lockscreen background image
+function set-background-lockscreen(){
+    # to use add an image to below path and call
+    # set-background-lockscreen [name-of-image]
+    var="file:///home/matheth/Pictures/desktop-wallpapers/$1"
+    echo $var
+    gsettings set org.gnome.desktop.screensaver picture-uri "$var"
+}

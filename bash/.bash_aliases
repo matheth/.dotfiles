@@ -25,7 +25,7 @@ alias gh="history|grep"
 alias c++="g++ -std=c++11 -g -O2 -Wconversion -Wshadow -Wall -Wextra -D_GLIBCXX_DEBUG -c" 
 
 # find remaping
-alias find="find . -name "
+# alias find="find . -name "
 
 # valgrind remapping
 alias valgrind="valgrind --leak-check=full "
@@ -47,6 +47,3 @@ alias gd2="gd HEAD~2"
 alias gd3="gd HEAD~3"
 alias gcl="git clone"
 alias gck="git checkout"
-
-# cd into current uba semester folder
-alias cduba="cd ~/Desktop/UBA/2021/1C"
