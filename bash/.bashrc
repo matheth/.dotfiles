@@ -133,7 +133,7 @@ command_not_found_handle() {
 }
 
 
-export PATH=$PATH:~/Desktop/scipopt/bin
+export PATH=$PATH:~/Desktop/bash_scripts/change-background
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
