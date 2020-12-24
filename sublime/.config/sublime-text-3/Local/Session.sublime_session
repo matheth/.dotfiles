@@ -1,11 +1,13 @@
 {
 	"folder_history":
 	[
+		"/home/matheth/Desktop/test/bash",
 		"/home/matheth/Desktop/advent_of_code",
+		"/home/matheth",
 		"/home/matheth/Desktop/test/web"
 	],
 	"last_version": 3211,
-	"last_window_id": 3,
+	"last_window_id": 6,
 	"log_indexing": false,
 	"settings":
 	{
@@ -16,10 +18,34 @@
 			{
 				"selected_items":
 				[
+					[
+						"instruction",
+						"INSTRUCTIONS"
+					]
 				]
 			},
 			"build_system_choices":
 			[
+				[
+					[
+						[
+							"Packages/Python/Python.sublime-build",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							"Syntax Check"
+						],
+						[
+							"Packages/User/Python3.sublime-build",
+							""
+						]
+					],
+					[
+						"Packages/User/Python3.sublime-build",
+						""
+					]
+				]
 			],
 			"build_varint": "",
 			"command_palette":
@@ -28,6 +54,26 @@
 				"last_filter": "",
 				"selected_items":
 				[
+					[
+						"ht",
+						"HTMLBeautify"
+					],
+					[
+						"html",
+						"HTMLBeautify"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"disable",
+						"Package Control: Disable Package"
+					],
+					[
+						"enable",
+						"Package Control: Enable Package"
+					],
 					[
 						"remove",
 						"Package Control: Remove Package"
@@ -41,20 +87,12 @@
 						"Color Picker"
 					],
 					[
-						"enable",
-						"Package Control: Enable Package"
-					],
-					[
 						"upgrade",
 						"Package Control: Upgrade Package"
 					],
 					[
 						"cool",
 						"Color Picker"
-					],
-					[
-						"install",
-						"Package Control: Install Package"
 					],
 					[
 						"colorp",
@@ -101,9 +139,18 @@
 			},
 			"file_history":
 			[
-				"/home/matheth/Desktop/test/bash/change-background.sh",
+				"/home/matheth/Desktop/test/bash/test.html",
 				"/home/matheth/Desktop/test/bash/asdasd.txt",
+				"/home/matheth/Desktop/test/bash/change-background.sh",
 				"/home/matheth/Desktop/test/web/index.html",
+				"/home/matheth/.dotfiles/.gitignore",
+				"/home/matheth/.dotfiles/sublime/.config/sublime-text-3/Index/CURRENT",
+				"/home/matheth/Desktop/advent_of_code/2015/day2/main.py",
+				"/home/matheth/Desktop/advent_of_code/2015/day2/input",
+				"/home/matheth/Desktop/advent_of_code/2015/day1/main.py",
+				"/home/matheth/Desktop/advent_of_code/2019/day1/main.py",
+				"/home/matheth/Desktop/advent_of_code/2015/day1/input",
+				"/home/matheth/Desktop/advent_of_code/2015/day1.py",
 				"/home/matheth/Desktop/test/web/styles.css",
 				"/home/matheth/Desktop/advent_of_code/2020/day4/main.py"
 			],
@@ -123,8 +170,6 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"##",
-					"55729"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -151,6 +196,10 @@
 			"output.Terminus":
 			{
 				"height": 333.0
+			},
+			"output.exec":
+			{
+				"height": 372.0
 			},
 			"output.find_results":
 			{
@@ -209,6 +258,70 @@
 				"selected_items":
 				[
 					[
+						"ero",
+						"eroWallpapers"
+					],
+					[
+						"des",
+						"desktop"
+					],
+					[
+						"down",
+						"downloadImage"
+					],
+					[
+						"random",
+						"randomImage"
+					],
+					[
+						"pat",
+						"pathToImage"
+					],
+					[
+						"name",
+						"nameFullImage"
+					],
+					[
+						"desk",
+						"desktop-wallpapers"
+					],
+					[
+						"xa",
+						"xpathFullImage"
+					],
+					[
+						"downl",
+						"downloadWallpaperPage"
+					],
+					[
+						"xpa",
+						"xpathFullImage"
+					],
+					[
+						"man",
+						"mainPage"
+					],
+					[
+						"wall",
+						"wallpapersPage"
+					],
+					[
+						"downa",
+						"downloadWallpaper"
+					],
+					[
+						"main",
+						"mainPage"
+					],
+					[
+						"xp",
+						"xpath"
+					],
+					[
+						"wallpaper",
+						"desktop-wallpapers"
+					],
+					[
 						"instruction",
 						"INSTRUCTIONS"
 					]
@@ -216,17 +329,8 @@
 			},
 			"buffers":
 			[
-				{
-					"file": "/home/matheth/Desktop/advent_of_code/2015/day3/main.py",
-					"settings":
-					{
-						"buffer_size": 611,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				}
 			],
-			"build_system": "Packages/User/Python3.sublime-build",
+			"build_system": "",
 			"build_system_choices":
 			[
 				[
@@ -258,6 +362,18 @@
 				"selected_items":
 				[
 					[
+						"ht",
+						"HTMLBeautify"
+					],
+					[
+						"html",
+						"HTMLBeautify"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
 						"disable",
 						"Package Control: Disable Package"
 					],
@@ -284,10 +400,6 @@
 					[
 						"cool",
 						"Color Picker"
-					],
-					[
-						"install",
-						"Package Control: Install Package"
 					],
 					[
 						"colorp",
@@ -334,28 +446,30 @@
 			},
 			"expanded_folders":
 			[
-				"/home/matheth/Desktop/advent_of_code",
-				"/home/matheth/Desktop/advent_of_code/2015",
-				"/home/matheth/Desktop/advent_of_code/2015/day2",
-				"/home/matheth/Desktop/advent_of_code/2015/day3"
+				"/home/matheth/Desktop/test/bash"
 			],
 			"file_history":
 			[
+				"/home/matheth/Desktop/test/bash/asdasd.txt",
+				"/home/matheth/Desktop/test/bash/change-background.sh",
+				"/home/matheth/Desktop/test/bash/hentai.html",
+				"/home/matheth/test.html",
+				"/home/matheth/Desktop/test/bash/test.html",
+				"/home/matheth/Desktop/test/web/index.html",
+				"/home/matheth/.dotfiles/.gitignore",
+				"/home/matheth/.dotfiles/sublime/.config/sublime-text-3/Index/CURRENT",
 				"/home/matheth/Desktop/advent_of_code/2015/day2/main.py",
 				"/home/matheth/Desktop/advent_of_code/2015/day2/input",
 				"/home/matheth/Desktop/advent_of_code/2015/day1/main.py",
 				"/home/matheth/Desktop/advent_of_code/2019/day1/main.py",
 				"/home/matheth/Desktop/advent_of_code/2015/day1/input",
 				"/home/matheth/Desktop/advent_of_code/2015/day1.py",
-				"/home/matheth/Desktop/test/bash/change-background.sh",
-				"/home/matheth/Desktop/test/bash/asdasd.txt",
-				"/home/matheth/Desktop/test/web/index.html",
 				"/home/matheth/Desktop/test/web/styles.css",
 				"/home/matheth/Desktop/advent_of_code/2020/day4/main.py"
 			],
 			"find":
 			{
-				"height": 28.0
+				"height": 41.0
 			},
 			"find_in_files":
 			{
@@ -369,9 +483,18 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"robo",
-					"santa",
-					"0"
+					"# ",
+					"    ",
+					"hentai",
+					"xpath",
+					"xpathUl",
+					"wallpapersPage",
+					"\\\"",
+					"--noout",
+					"\"",
+					"'",
+					"\"",
+					"'"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -389,44 +512,14 @@
 			"folders":
 			[
 				{
-					"path": "/home/matheth/Desktop/advent_of_code"
+					"path": "/home/matheth/Desktop/test/bash"
 				}
 			],
 			"groups":
 			[
 				{
-					"selected": 0,
 					"sheets":
 					[
-						{
-							"buffer": 0,
-							"file": "/home/matheth/Desktop/advent_of_code/2015/day3/main.py",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 611,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										611,
-										611
-									]
-								],
-								"settings":
-								{
-									"open_with_edit": true,
-									"syntax": "Packages/Python/Python.sublime-syntax"
-								},
-								"translation.x": 0.0,
-								"translation.y": 29.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"type": "text"
-						}
 					]
 				}
 			],
@@ -474,7 +567,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,0,0,0,1366,768",
+			"position": "0,1,0,0,0,26,23,709,727,1366,768",
 			"project": "",
 			"replace":
 			{
@@ -521,7 +614,7 @@
 			"template_settings":
 			{
 			},
-			"window_id": 3,
+			"window_id": 6,
 			"workspace_name": ""
 		}
 	],
