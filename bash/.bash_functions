@@ -24,6 +24,11 @@ function gacmp(){
     git push
 }
 
+# add a file, commit with a message, and push
+function gcmp(){
+	gcm "$1" 
+    git push
+}
 # change desktop background image
 function set-background-desktop(){
     # to use add an image to below path and call
