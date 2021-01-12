@@ -14,7 +14,7 @@
 
 ## Linking and unlinking in stow:
 
-[Video explaining how it works](https://www.youtube.com/watch?v=CFzEuBGPPPg&t=1501s)
+[Video explaining how it works](https://www.youtube.com/watch?v=CFzEuBGPPPg)
 
 ### To link:
 
@@ -30,5 +30,4 @@
     stow -nvDt ~ [folder name1] [folder name2] ...
 
 - -D flag: unstow (or unlink)
-
 
