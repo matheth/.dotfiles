@@ -7,5 +7,7 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
-  }
+  },
+  "editor.tabSize": 2,
+  "liveServer.settings.CustomBrowser": "chrome"
 }
