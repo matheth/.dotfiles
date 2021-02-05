@@ -12,6 +12,18 @@
 9. if all looks okay run `stow -vSt ~ *`
 10. change cursor to I-beam: Terminal -> right click -> preferences -> Cursor shape -> I beam
 
+All together:
+```
+    sudo apt install stow
+    cd ~
+    rm -rf .dotfiles
+    git clone https://github.com/agustinntarias/.dotfiles.git
+    rm .bashrc
+    cd .dotfiles
+    rm README.md
+    stow -vSt ~ *
+```
+
 ## Linking and unlinking in stow:
 
 [Video explaining how it works](https://www.youtube.com/watch?v=CFzEuBGPPPg)
