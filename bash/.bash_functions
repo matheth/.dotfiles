@@ -46,3 +46,9 @@ function set-background-lockscreen(){
     echo $var
     gsettings set org.gnome.desktop.screensaver picture-uri "$var"
 }
+
+# get all status from git repos in some folder
+function git-status-all(){
+    for d in `find ~ -name ".git"`; do cd $d/..; echo `pwd`:; git status; echo; done
+    cd ~
+}
