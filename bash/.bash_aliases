@@ -27,6 +27,9 @@ alias c++="g++ -std=c++11 -g -O2 -Wconversion -Wshadow -Wall -Wextra -D_GLIBCXX_
 # valgrind remapping
 alias valgrind="valgrind --leak-check=full "
 
+# find all git repositories
+alias find-git="find ~ -name '.git'"
+
 # git related aliases
 alias gss="git status"
 alias gc="git commit "
