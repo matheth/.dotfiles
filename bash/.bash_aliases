@@ -24,9 +24,6 @@ alias gh="history|grep"
 # compile c++
 alias c++="g++ -std=c++11 -g -O2 -Wconversion -Wshadow -Wall -Wextra -D_GLIBCXX_DEBUG -c" 
 
-# find remaping
-alias find="find . -name "
-
 # valgrind remapping
 alias valgrind="valgrind --leak-check=full "
 
