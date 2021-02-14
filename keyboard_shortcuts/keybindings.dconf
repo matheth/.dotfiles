@@ -1,0 +1,6 @@
+[/]
+switch-windows=['<Alt>Tab']
+switch-applications=@as []
+show-desktop=['<Primary><Alt>d']
+switch-applications-backward=@as []
+switch-windows-backward=['<Shift><Alt>Tab']
