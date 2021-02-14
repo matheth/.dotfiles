@@ -52,3 +52,8 @@ function git-status-all(){
     for d in `find ~ -name ".git"`; do cd $d/..; echo `pwd`:; git status; echo; done
     cd ~
 }
+
+# find names that contain string in name in current directory
+function findlike(){
+    find . -name "*$1*"
+}
