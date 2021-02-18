@@ -49,7 +49,7 @@ function set-background-lockscreen(){
 }
 
 # get all status from git repos in some folder
-function git-status-all(){
+function find-git-status(){
     for d in `find ~ -name ".git"`; do cd $d/..; echo `pwd`:; git status; echo; done
     cd ~
 }
