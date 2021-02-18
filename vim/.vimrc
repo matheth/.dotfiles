@@ -1,24 +1,34 @@
-" Comments in Vimscript start with a `"`.
-
-" If you open this file in Vim, it'll be syntax highlighted for you.
-
-" Vim is based on Vi. Setting `nocompatible` switches from the default
-" Vi-compatibility mode and enables useful Vim functionality. This
-" configuration option turns out not to be necessary for the file named
-" '~/.vimrc', because Vim automatically enters nocompatible mode if that file
-" is present. But we're including it here just in case this config file is
-" loaded some other way (e.g. saved as `foo`, and then Vim started with
-" `vim -u foo`).
+" make vim more usable
 set nocompatible
+
+" Use the OS clipboard by default (on versions compiled with `+clipboard`)
+set clipboard=unnamed
 
 " Turn on syntax highlighting.
 syntax on
+
+" Enhance command-line completion
+set wildmenu
+
+" Allow backspace in insert mode
+set backspace=indent,eol,start
+
+" Optimize for fast terminal connections
+set ttyfast
+
+" Add the g flag to search/replace by default
+set gdefault
+
+" Respect modeline in files
+set modeline
+set modelines=4
 
 " Disable the default Vim startup message.
 set shortmess+=I
 
 " Show line numbers.
 set number
+
 
 " This enables relative line numbering mode. With both number and
 " relativenumber enabled, the current line shows the true line number, while
@@ -44,14 +54,21 @@ set backspace=indent,eol,start
 " for more information on this.
 set hidden
 
-" This setting makes search case-insensitive when all characters in the string
-" being searched are lowercase. However, the search becomes case-sensitive if
-" it contains any capital letters. This makes searching more convenient.
+" Highlight searches
+set hlsearch
+
+" Ignore case of searches
 set ignorecase
 set smartcase
 
+" Always show status line
+set laststatus=2
+
 " Enable searching as you type, rather than waiting till you press enter.
 set incsearch
+
+" Enable mouse in all modes
+set mouse=a
 
 " Unbind some useless/annoying default key bindings.
 nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
@@ -59,8 +76,10 @@ nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
 " Disable audible bell because it's annoying.
 set noerrorbells visualbell t_vb=
 
-" Enable mouse support. You should avoid relying on this too much, but it can
-" sometimes be convenient.
-set mouse+=a
+" Don’t reset cursor to start of line when moving around.
+set nostartofline
+
+" Show the (partial) command as it’s being typed
+set showcmd
 
 set tabstop=4
