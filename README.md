@@ -1,5 +1,11 @@
 # Configuration files
 
+## Demo
+![Bash Demo](images/bash-demo.png)
+
+![Zsh Demo](images/ohmyzsh-demo.png)
+
+
 ## To restore files
 1. Install stow `sudo apt install stow`
 2. cd into home directory
@@ -42,4 +48,3 @@ All together:
     stow -nvDt ~ [folder name1] [folder name2] ...
 
 - -D flag: unstow (or unlink)
-
