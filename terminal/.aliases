@@ -47,3 +47,6 @@ alias gd2="gd HEAD~2"
 alias gd3="gd HEAD~3"
 alias gcl="git clone"
 alias gck="git checkout"
+
+# check weather
+alias weather="gnome-weather"
