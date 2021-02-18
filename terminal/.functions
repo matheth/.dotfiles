@@ -63,7 +63,7 @@ function find-git-status(){
 		fi
 	done
 	if $no_repos_changed ; then
-		echo "...No repos have been found with untracked files"
+		echo "No repos have been found with untracked files"
 	fi
     cd ~
 }
