@@ -50,7 +50,16 @@ function set-background-lockscreen(){
 
 # get all status from git repos in some folder
 function find-git-status(){
-    for d in `find ~ -name ".git"`; do cd $d/..; echo `pwd`:; git status; echo; done
+    for d in `find ~ -name ".git"`; do 
+		cd $d/..;
+		if ! git diff-index --quiet HEAD --; then
+	 		echo `pwd`:;
+			gss
+			echo; 
+		#else
+			#echo "\t...No changes found in this repository\n"
+		fi
+	done
     cd ~
 }
 
