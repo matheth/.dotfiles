@@ -4,13 +4,13 @@
 
 
 # LOAD ALIASES
-if [ -e $HOME/.bash_aliases ]; then
-    source $HOME/.bash_aliases
+if [ -e $HOME/.aliases ]; then
+    source $HOME/.aliases
 fi
 
 # LOAD FUNCTIONS
-if [ -e $HOME/.bash_functions ]; then
-    source $HOME/.bash_functions
+if [ -e $HOME/.functions ]; then
+    source $HOME/.functions
 fi
 
 

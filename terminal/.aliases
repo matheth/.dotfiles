@@ -1,5 +1,5 @@
-alias aliases="vim ~/.bash_aliases"
-alias functions="vim ~/.bash_functions"
+alias aliases="vim ~/.aliases"
+alias functions="vim ~/.functions"
 
 # ls 
 alias ll="ls -l"
