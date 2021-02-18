@@ -8,7 +8,7 @@ export ZSH="/home/matheth/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="afowler"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -103,3 +103,7 @@ alias type="type -f"
 
 # functions
 source $HOME/.functions
+
+# command not found suggestions
+source /etc/zsh_command_not_found
+
