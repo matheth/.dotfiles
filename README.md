@@ -1,10 +1,11 @@
 # Configuration files
 
 ## Demo
-![Bash Demo](images/bash-demo.png)
 
-![Zsh Demo](images/ohmyzsh-demo.png)
 
+Bash Demo                  |  Zsh Demo
+:-------------------------:|:-------------------------:
+![](images/bash-demo.png)   |  ![](images/ohmyzsh-demo.png)
 
 ## To restore files
 1. Install stow `sudo apt install stow`
