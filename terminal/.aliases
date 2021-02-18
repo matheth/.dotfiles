@@ -50,3 +50,6 @@ alias gck="git checkout"
 
 # check weather
 alias weather="gnome-weather"
+
+# check what shell is being used
+alias shell="ps -p $$ | awk '{print \$NF}' | tail -n1"
