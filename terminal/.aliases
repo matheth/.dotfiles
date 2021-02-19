@@ -53,3 +53,9 @@ alias weather="gnome-weather"
 
 # check what shell is being used
 alias shell="ps -p $$ | awk '{print \$NF}' | tail -n1"
+
+# tree aliases
+alias tree1="tree -L 1"
+alias tree2="tree -L 2"
+alias tree3="tree -L 3"
+
