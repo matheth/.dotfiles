@@ -104,3 +104,5 @@ imap <S-Down> <Esc>v<Down>
 imap <S-Left> <Esc>v<Left>
 imap <S-Right> <Esc>v<Right>
 
+" wrap cursor
+set whichwrap+=<,>,h,l
