@@ -49,6 +49,20 @@ function gi(){
    grep $current_dir ~/git-repos-globally.txt &>/dev/null || echo $current_dir >> ~/git-repos-globally.txt
 }
 
+# find all repositories in this system
+function find-git(){
+    repos=~/git-repos-globally.txt
+    if [ -f "$repos" ] && [ -s $repos ] && [ "$1" != '-f' ]; then
+        # repos file exists, is not empty, and the -f flag isn't being used
+        cat $repos
+        return 0
+    else
+       find ~ -name ".git" > ~/git-repos-globally.txt
+       cat $repos
+        return 127
+    fi
+}
+
 # change desktop background image
 function set-background-desktop(){
     # to use add an image to below path and call
