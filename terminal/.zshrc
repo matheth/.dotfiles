@@ -70,7 +70,7 @@ ZSH_THEME="afowler"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -107,3 +107,6 @@ source $HOME/.functions
 # command not found suggestions
 source /etc/zsh_command_not_found
 
+# use vim
+export VISUAL=vim
+export EDITOR="$VISUAL"
