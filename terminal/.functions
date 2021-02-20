@@ -41,6 +41,14 @@ function gcl(){
    fi
 }
 
+# initialize an empty repository and save the location to a file
+function gi(){
+   git init
+    current_dir=$(pwd)
+   echo $current_dir
+   grep $current_dir ~/git-repos-globally.txt &>/dev/null || echo $current_dir >> ~/git-repos-globally.txt
+}
+
 # change desktop background image
 function set-background-desktop(){
     # to use add an image to below path and call
