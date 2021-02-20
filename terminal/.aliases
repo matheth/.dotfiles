@@ -43,6 +43,7 @@ alias gd1="gd HEAD~1"
 alias gd2="gd HEAD~2"
 alias gd3="gd HEAD~3"
 alias gck="git checkout"
+alias gap="git add -p"
 
 # check weather
 alias weather="gnome-weather"
