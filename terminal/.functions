@@ -30,6 +30,17 @@ function gcmp(){
     git push
 }
 
+# clone a repository and save the location to a file
+function gcl(){
+   git clone "$1"
+   name_of_repo=$(echo "$1" | sed -e 's/git@github\.com:[a-zA-Z0-9]*\///g' -e 's/.git//g' -)
+   if ! $? ; then
+       parent_directory=$(pwd)
+       full_path="$parent_directory/$name_of_repo"
+       grep $name_of_repo ~/git-repos-globally.txt &>/dev/null || echo $full_path >> ~/git-repos-globally.txt
+   fi
+}
+
 # change desktop background image
 function set-background-desktop(){
     # to use add an image to below path and call
