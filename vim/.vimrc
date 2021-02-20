@@ -2,7 +2,7 @@
 set nocompatible
 
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " Turn on syntax highlighting.
 syntax on
