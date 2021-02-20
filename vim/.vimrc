@@ -83,3 +83,10 @@ set nostartofline
 set showcmd
 
 set tabstop=4
+
+" Ctrl + c, x and v
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <ESC>"+pa
+
