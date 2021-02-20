@@ -91,6 +91,11 @@ function find-git-status(){
     cd ~
 }
 
+# find names that contain string in name in current directory
+function findlike(){
+    find . -name "*$1*"
+}
+
 
 # change desktop background image
 function set-background-desktop(){
@@ -108,29 +113,4 @@ function set-background-lockscreen(){
     var="file:///home/matheth/Pictures/desktop-wallpapers/$1"
     echo $var
     gsettings set org.gnome.desktop.screensaver picture-uri "$var"
-}
-
-# get all status from git repos in some folder
-function find-git-status(){
-	no_repos_changed=true
-    for d in `find ~ -name ".git"`; do 
-		cd $d/..;
-		if ! git diff-index --quiet HEAD --; then
-	 		echo `pwd`:;
-			gss
-			echo;
-			no_repos_changed=false
-		#else
-			#echo "\t...No changes found in this repository\n"
-		fi
-	done
-	if $no_repos_changed ; then
-		echo "No repos have been found with untracked files"
-	fi
-    cd ~
-}
-
-# find names that contain string in name in current directory
-function findlike(){
-    find . -name "*$1*"
 }
