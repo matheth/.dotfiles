@@ -63,6 +63,35 @@ function find-git(){
     fi
 }
 
+# get all status from git repos in some folder
+function find-git-status(){
+    no_repos_changed=true
+   if [ "$1" = "-f" ]; then
+       echo "Creating a repositories index from scratch"
+        find ~ -name ".git" > ~/git-repos-globally.txt
+    elif find-git &>/dev/null; then
+        echo "A repositories index has been found..."
+    else
+        echo "No repositores index found, creating one from scratch..."
+        find ~ -name ".git" > ~/git-repos-globally.txt
+    fi
+    repos=( $(cat ~/git-repos-globally.txt) )
+    for d in $repos; do
+      cd $d/..;
+      if ! git diff-index --quiet HEAD --; then
+        echo `pwd`:;
+        gss
+        echo;
+        no_repos_changed=false
+      fi
+    done
+   if $no_repos_changed ; then
+       echo "No repos have been found with untracked files"
+   fi
+    cd ~
+}
+
+
 # change desktop background image
 function set-background-desktop(){
     # to use add an image to below path and call
