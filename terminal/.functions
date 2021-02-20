@@ -65,30 +65,31 @@ function find-git(){
 
 # get all status from git repos in some folder
 function find-git-status(){
+	current_dir=$(pwd)
     no_repos_changed=true
-   if [ "$1" = "-f" ]; then
-       echo "Creating a repositories index from scratch"
-        find ~ -name ".git" > ~/git-repos-globally.txt
-    elif find-git &>/dev/null; then
-        echo "A repositories index has been found..."
-    else
-        echo "No repositores index found, creating one from scratch..."
-        find ~ -name ".git" > ~/git-repos-globally.txt
-    fi
-    repos=( $(cat ~/git-repos-globally.txt) )
-    for d in $repos; do
-      cd $d/..;
-      if ! git diff-index --quiet HEAD --; then
-        echo `pwd`:;
-        gss
-        echo;
-        no_repos_changed=false
-      fi
-    done
-   if $no_repos_changed ; then
-       echo "No repos have been found with untracked files"
-   fi
-    cd ~
+	if [ "$1" = "-f" ]; then
+		echo "Creating a repositories index from scratch"
+		find ~ -name ".git" > ~/git-repos-globally.txt
+	elif find-git &>/dev/null; then
+		echo "A repositories index has been found..."
+	else
+		echo "No repositores index found, creating one from scratch..."
+		find ~ -name ".git" > ~/git-repos-globally.txt
+	fi
+		repos=( $(cat ~/git-repos-globally.txt) )
+	for d in $repos; do
+		cd $d/..;
+		if ! git diff-index --quiet HEAD --; then
+			echo `pwd`:;
+			gss
+			echo;
+			no_repos_changed=false
+		fi
+	done
+	if $no_repos_changed ; then
+		echo "No repos have been found with untracked files"
+	fi
+	cd $current_dir
 }
 
 # find names that contain string in name in current directory
