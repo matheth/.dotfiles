@@ -7,11 +7,12 @@ Gnome-Control-Center (used by Unity and Gnome Shell) stores its key bindings in 
         /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ for custom, user-defined shortcuts.
 
     The following example saves the above Dconf directories to two files keybindings.dconf and custom-keybindings.dconf and then restores them from the same files:
+BACKING UP
+    dconf dump '/org/gnome/desktop/wm/keybindings/' > ~/.dotfiles/keyboard_shortcuts/keybindings.dconf
+    dconf dump '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' > ~/.dotfiles/keyboard_shortcuts/custom-keybindings.dconf
 
-    dconf dump '/org/gnome/desktop/wm/keybindings/' > keybindings.dconf
-    dconf dump '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' > custom-keybindings.dconf
-
-    dconf load '/org/gnome/desktop/wm/keybindings/' < keybindings.dconf
-    dconf load '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' < custom-keybindings.dconf
+RESTORING CONFIGURATION
+    dconf load '/org/gnome/desktop/wm/keybindings/' < ~/.dotfiles/keyboard_shortcuts/keybindings.dconf
+    dconf load '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' < ~/.dotfiles/keyboard_shortcuts/custom-keybindings.dconf
 
 
