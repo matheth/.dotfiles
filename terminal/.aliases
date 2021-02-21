@@ -62,3 +62,6 @@ alias dotfiles="cd ~/.dotfiles"
 
 # money alias
 alias money="vim ~/Desktop/money.txt"
+
+# vimrc alias
+alias vimrc="vim ~/.vimrc"
