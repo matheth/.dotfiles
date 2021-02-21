@@ -1,29 +1,39 @@
-[custom2]
-binding='Print'
-command='gnome-screenshot'
-name='Take screenshot'
-
-[custom5]
-binding='<Primary><Alt>o'
-command='osu'
-name='osu!'
+[custom0]
+binding='<Primary><Alt>t'
+command='gnome-terminal'
+name='Terminal'
 
 [custom1]
 binding='<Primary><Alt>f'
 command='firefox'
 name='Firefox'
 
-[custom4]
-binding='<Primary><Alt>v'
-command='code'
-name='Vscode'
-
-[custom0]
-binding='<Primary><Alt>t'
-command='gnome-terminal'
-name='Terminal'
+[custom2]
+binding='Print'
+command='gnome-screenshot'
+name='Take screenshot'
 
 [custom3]
 binding='<Primary><Alt>g'
 command='google-chrome'
 name='Google'
+
+[custom4]
+binding='<Primary><Alt>v'
+command='code'
+name='Vscode'
+
+[custom5]
+binding='<Primary><Alt>o'
+command='osu'
+name='osu!'
+
+[custom6]
+binding='<Primary><Alt>w'
+command='gnome-weather'
+name='Weather'
+
+[custom7]
+binding='<Primary><Alt>c'
+command='gnome-calendar'
+name='Calendar'
