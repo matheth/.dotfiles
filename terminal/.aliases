@@ -52,6 +52,7 @@ alias weather="gnome-weather"
 alias shell="screenfetch -n -N -d 'shell' | sed -e 's/ Shell: //' -"
 
 # tree aliases
+alias tree="tree -a "
 alias tree1="tree -L 1"
 alias tree2="tree -L 2"
 alias tree3="tree -L 3"
