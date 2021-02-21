@@ -58,3 +58,6 @@ alias tree3="tree -L 3"
 
 # dotfiles alias
 alias dotfiles="cd ~/.dotfiles"
+
+# money alias
+alias money="vim ~/Desktop/money.txt"
