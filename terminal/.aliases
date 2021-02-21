@@ -49,7 +49,7 @@ alias gcv="git commit -v"
 alias weather="gnome-weather"
 
 # check what shell is being used
-alias shell="ps -p $$ | awk '{print \$NF}' | tail -n1"
+alias shell="screenfetch -n -N -d 'shell' | sed -e 's/ Shell: //' -"
 
 # tree aliases
 alias tree1="tree -L 1"
