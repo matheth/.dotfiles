@@ -106,3 +106,6 @@ imap <S-Right> <Esc>v<Right>
 
 " wrap cursor
 set whichwrap+=<,>,h,l
+
+" enable maths
+ino <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR>
