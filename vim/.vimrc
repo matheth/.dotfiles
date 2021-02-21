@@ -1,4 +1,4 @@
-" make vim more usable
+" make vim more usable.
 set nocompatible
 
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
@@ -108,4 +108,4 @@ imap <S-Right> <Esc>v<Right>
 set whichwrap+=<,>,h,l
 
 " enable maths
-ino <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR>
+ino <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR><ESC>9bd6w
