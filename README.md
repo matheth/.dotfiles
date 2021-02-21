@@ -49,3 +49,88 @@ All together:
     stow -nvDt ~ [folder name1] [folder name2] ...
 
 - -D flag: unstow (or unlink)
+
+### Backup wider system files
+
+#### Keyboard:
+[link to full explanation](https://askubuntu.com/questions/682513/how-to-backup-restore-system-custom-keyboard-shortcuts#844907)
+
+Gnome-Control-Center (used by Unity and Gnome Shell) stores its key bindings in the per-user Dconf database directories /org/gnome/desktop/wm/keybindings/ and /org/gnome/settings-daemon/plugins/media-keys/ (source).
+
+The easiest way to keep them across system re-installations is to keep the per-user configuration directories (~/.config or more specifically ~/.config/dconf/user for Dconf only). Most of the time it's not necessary or desirable to purge the per-user configuration files anyway.
+
+If you can't or won't keep your old Dconf database you can use the dconf command to export (“dump”) parts of it into a file and import (“load”) it later. The relevant Dconf directories are
+
++ /org/gnome/desktop/wm/keybindings/ for pre-defined shortcuts and
++ /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ for custom, user-defined shortcuts.
+
+The following example saves the above Dconf directories to two files keybindings.dconf and custom-keybindings.dconf and then restores them from the same files:
+  
+##### Backing up
+
+```
+    dconf dump '/org/gnome/desktop/wm/keybindings/' > ~/.dotfiles/keyboard_shortcuts/keybindings.dconf
+    dconf dump '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' > ~/.dotfiles/keyboard_shortcuts/custom-keybindings.dconf
+```
+
+##### Restoring configuration
+```
+    dconf load '/org/gnome/desktop/wm/keybindings/' < ~/.dotfiles/keyboard_shortcuts/keybindings.dconf
+    dconf load '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' < ~/.dotfiles/keyboard_shortcuts/custom-keybindings.dconf
+```
+
+#### Installed software:
+[link to full explanation](https://www.nixtutor.com/linux/keep-a-backup-of-installed-packages/)
+
+
+##### Backup
+```
+	dpkg --get-selections > installed-software.log
+```
+##### Restore
+```
+	dpkg --set-selections < installed-software.log
+	apt-get dselect-upgrade
+```
+
+#### Dconf + Gnome
+[link to full explanation](https://www.addictivetips.com/ubuntu-linux-tips/back-up-the-gnome-shell-desktop-settings-linux/)
+
+
+### Back Up Gnome Settings
+
+Creating a full backup with Dconf will allow you to save all Dconf settings and configurations, along with the Gnome Shell desktop environment. For most users this is overkill. However, if you’re paranoid and want to ensure that every setting is safe, this is the way to go.
+
+#### Backup
+Open up a terminal and use the dconf dump command to export the entire Dconf database to your Linux PC. DO NOT USE SUDO!
+```
+	dconf dump / > full-backup
+```
+The settings dump is complete. The next step is to look over the contents of the file, to verify that the backup ran correctly. Using cat will print the contents of the data in a terminal, and allow you to look it over.
+
+```
+	cat ~/full-backup
+```
+If everything looks good, type clear and create a new folder in ~/Documents to hold the backup file. Keeping the Dconf backup in a separate folder will ensure that it doesn’t get accidentally deleted.
+
+```
+	mkdir -p ~/Documents/dconf-backups/
+	mv full-backup ~/Documents/dconf-backups/
+```
+
+#### Restore Backup
+
+
+Download the \<file\> to your Linux PC and open up a terminal. In the terminal, use the cd command to access the files inside.
+
+```
+	cd ~/Downloads/<file>
+```
+
+Start the restoration process by importing the Dconf backup file into the system.
+
+##### Full Restore Command
+
+```
+	dconf load / < full-backup
+```
