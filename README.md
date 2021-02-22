@@ -69,59 +69,60 @@ The following example saves the above Dconf directories to two files keybindings
 ##### Backing up
 
 ```
-    dconf dump '/org/gnome/desktop/wm/keybindings/' > ~/.dotfiles/keyboard_shortcuts/keybindings.dconf
-    dconf dump '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' > ~/.dotfiles/keyboard_shortcuts/custom-keybindings.dconf
+    dconf dump '/org/gnome/desktop/wm/keybindings/' > ~/.dotfiles/backups/.backups/keybindings.dconf
+    dconf dump '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' > ~/.dotfiles/backups/.backups/custom-keybindings.dconf
 ```
 
 ##### Restoring configuration
 ```
-    dconf load '/org/gnome/desktop/wm/keybindings/' < ~/.dotfiles/keyboard_shortcuts/keybindings.dconf
-    dconf load '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' < ~/.dotfiles/keyboard_shortcuts/custom-keybindings.dconf
+    dconf load '/org/gnome/desktop/wm/keybindings/' < ~/.dotfiles/backups/.backups/keybindings.dconf
+    dconf load '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' < ~/.dotfiles/backups/.backups/custom-keybindings.dconf
 ```
 
 #### Installed software:
 [link to full explanation](https://www.nixtutor.com/linux/keep-a-backup-of-installed-packages/)
 
-
 ##### Backup
 
 ```
-	dpkg --get-selections > ~/.dotfiles/programs/installed-software.log
+	dpkg --get-selections > ~/.dotfiles/backups/.backups/installed-software.log
 ```
 
 ##### Restore
 
 ```
-	dpkg --set-selections < ~/.dotfiles/programs/installed-software.log
+	dpkg --set-selections < ~/.dotfiles/backups/.backups/installed-software.log
 	apt-get dselect-upgrade
 ```
 
-#### Dconf + Gnome
+#### System backup
 [link to full explanation](https://www.addictivetips.com/ubuntu-linux-tips/back-up-the-gnome-shell-desktop-settings-linux/)
 
 
-### Back Up System Settings
+### Back Up System Settings (dconf)
 
 Creating a full backup with Dconf will allow you to save all Dconf settings and configurations, along with the Gnome Shell desktop environment. For most users this is overkill. However, if you’re paranoid and want to ensure that every setting is safe, this is the way to go.
 
+
 #### Backup
+
 Open up a terminal and use the dconf dump command to export the entire Dconf database to your Linux PC. DO NOT USE SUDO!
 
 ```
-	dconf dump / > ~/.dotfiles/system-wide-backups/Documents/backups/dconf-backups/full-backup
+	dconf dump / > ~/.dotfiles/backups/.backups/full-backup
 ```
 
 The settings dump is complete. The next step is to look over the contents of the file, to verify that the backup ran correctly. Using cat will print the contents of the data in a terminal, and allow you to look it over.
 
 ```
-	cat ~/.dotfiles/system-wide-backups/Documents/backups/dconf-backups/full-backup
+	cat ~/.dotfiles/backups/.backups/full-backup
 ```
 
-If everything looks good, type clear and create a new folder in ~/Documents to hold the backup file. 
+If everything looks good, type clear and create a new folder in ~/.backups to hold the backup file. 
 
 ```
-	mkdir -p ~/Documents/dconf-backups/
-	touch ~/Documents/dconf-backups/full-backup 
+	mkdir -p ~/.backups
+	touch ~/.backups/full-backup 
 ```
 
 #### Restore Backup
@@ -130,7 +131,7 @@ If everything looks good, type clear and create a new folder in ~/Documents to h
 Download the \<file\> to your Linux PC and open up a terminal. In the terminal, use the cd command to access the files inside.
 
 ```
-	cd ~/Downloads/<file>
+	cd ~/Downloads
 ```
 
 Start the restoration process by importing the Dconf backup file into the system.
@@ -138,5 +139,5 @@ Start the restoration process by importing the Dconf backup file into the system
 ##### Full Restore Command
 
 ```
-	dconf load / < full-backup
+	dconf load / < \<file\>
 ```
