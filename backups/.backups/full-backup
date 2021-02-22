@@ -7,47 +7,57 @@ shared-path='/home/matheth/Downloads'
 
 [org/gnome/software]
 first-run=false
-check-timestamp=int64 1613639304
+check-timestamp=int64 1613916176
 
 [org/gnome/GWeather]
 temperature-unit='centigrade'
 
 [org/gnome/settings-daemon/plugins/media-keys]
 max-screencast-length=uint32 120
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/']
 screenshot='<Primary><Shift>Print'
 area-screenshot-clip=''
 home='<Primary><Alt>e'
 
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
-binding='Print'
-command='gnome-screenshot'
-name='Take screenshot'
-
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5]
-binding='<Primary><Alt>o'
-command='osu'
-name='osu!'
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Primary><Alt>t'
+command='terminator'
+name='Terminal'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
 binding='<Primary><Alt>f'
 command='firefox'
 name='Firefox'
 
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4]
-binding='<Primary><Alt>v'
-command='code'
-name='Vscode'
-
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
-binding='<Primary><Alt>t'
-command='gnome-terminal'
-name='Terminal'
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
+binding='Print'
+command='gnome-screenshot'
+name='Take screenshot'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3]
 binding='<Primary><Alt>g'
 command='google-chrome'
 name='Google'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4]
+binding='<Primary><Alt>v'
+command='code'
+name='Vscode'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5]
+binding='<Primary><Alt>o'
+command='osu'
+name='osu!'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6]
+binding='<Primary><Alt>w'
+command='gnome-weather'
+name='Weather'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7]
+binding='<Primary><Alt>c'
+command='gnome-calendar'
+name='Calendar'
 
 [org/gnome/settings-daemon/plugins/xsettings]
 antialiasing='grayscale'
@@ -57,9 +67,11 @@ hinting='slight'
 numlock-state='off'
 
 [org/gnome/shell]
-command-history=['deconf-editor', 'dconf-editor', 'software-properties-gtk', 'subl', 'code']
-enabled-extensions=['DesktopIconsSwitch@bananenfisch.net', 'dash-to-dock@micxgx.gmail.com', 'taskbar@ttux.net', 'show-desktop@l300lvl.tk', 'screenshotlocations.timur@linux.com']
-favorite-apps=['firefox-esr.desktop', 'google-chrome.desktop', 'code.desktop', 'start-tor-browser.desktop', 'sublime_text.desktop', 'org.gnome.Nautilus.desktop', 'osu!.desktop']
+app-picker-view=uint32 1
+command-history=['deconf-editor', 'dconf-editor', 'software-properties-gtk', 'code ~/Desktop/test/web/react', 'code', 'subl', 'gnome-calendar', 'terminator']
+enabled-extensions=['DesktopIconsSwitch@bananenfisch.net', 'dash-to-dock@micxgx.gmail.com', 'taskbar@ttux.net', 'show-desktop@l300lvl.tk', 'screenshotlocations.timur@linux.com', 'bluetooth-quick-connect@bjarosze.gmail.com']
+had-bluetooth-devices-setup=true
+favorite-apps=['firefox-esr.desktop', 'google-chrome.desktop', 'code.desktop', 'org.gnome.Nautilus.desktop', 'osu!.desktop', 'telegramdesktop.desktop', 'slack.desktop']
 
 [org/gnome/shell/extensions/dash-to-dock]
 autohide-in-fullscreen=false
@@ -72,6 +84,9 @@ require-pressure-to-show=true
 dock-position='LEFT'
 preferred-monitor=0
 
+[org/gnome/shell/extensions/bluetooth-quick-connect]
+bluetooth-auto-power-on=true
+
 [org/gnome/shell/extensions/desktop-icons]
 icon-size='standard'
 show-home=false
@@ -80,7 +95,7 @@ show-home=false
 show-tabs-mode='auto'
 
 [org/gnome/gedit/plugins/filebrowser]
-virtual-root='file:///home/matheth/.dotfiles/terminal/bash'
+virtual-root='file:///home/matheth/.dotfiles'
 tree-view=true
 root='file:///'
 
@@ -119,7 +134,7 @@ state=87168
 panel-id='world'
 
 [org/gnome/Weather/Application]
-locations=[<(uint32 2, <('Buenos Aires', 'SABE', true, [(-0.60330215059047076, -1.0195631771911182)], [(-0.6036657550335387, -1.024028305376373)])>)>, <(uint32 2, <('El Palomar Airport', 'SADP', false, [(-0.60388392119003798, -1.0227629416686772)], [(-0.6028658182774721, -1.023029593071797)])>)>]
+locations=[<(uint32 2, <('Buenos Aires', 'SABE', true, [(-0.60330215059047076, -1.0195631771911182)], [(-0.6036657550335387, -1.024028305376373)])>)>, <(uint32 2, <('El Palomar Airport', 'SADP', false, [(-0.60388392119003798, -1.0227629416686772)], [(-0.6028658182774721, -1.023029593071797)])>)>, <(uint32 2, <('El Palomar Airport', 'SADP', false, [(-0.60388392119003798, -1.0227629416686772)], [(-0.6028658182774721, -1.023029593071797)])>)>, <(uint32 2, <('El Palomar Airport', 'SADP', false, [(-0.60388392119003798, -1.0227629416686772)], [(-0.6028658182774721, -1.023029593071797)])>)>, <(uint32 2, <('El Palomar Airport', 'SADP', false, [(-0.60388392119003798, -1.0227629416686772)], [(-0.6028658182774721, -1.023029593071797)])>)>]
 
 [org/gnome/nautilus/preferences]
 search-view='list-view'
@@ -129,7 +144,7 @@ search-filter-time-type='last_modified'
 [org/gnome/nautilus/window-state]
 sidebar-width=158
 maximized=false
-initial-size=(631, 642)
+initial-size=(683, 694)
 
 [org/gnome/nautilus/compression]
 default-compression-format='zip'
@@ -180,14 +195,21 @@ window-height=694
 window-width=683
 
 [org/gnome/calendar]
-window-position=(26, 23)
+window-position=(0, 0)
 active-view='month'
-window-maximized=false
-window-size=(800, 600)
+window-maximized=true
+window-size=(1366, 694)
 
 [org/gnome/evolution-data-server]
 network-monitor-gio-name=''
 migrated=true
+
+[org/gnome/evolution-data-server/calendar]
+notify-window-height=163
+notify-window-x=26
+notify-window-y=23
+notify-window-width=576
+reminders-past=['c9822a0e6d48bb525718a7c1aec2a29ffc137331\n7f29ea817219e947a91382b6fedf9ebf1bca3d45\n1613840400\n1613844000\n1613847600\nBEGIN:VEVENT\r\nDTSTART;\r\n TZID=/freeassociation.sourceforge.net/America/Argentina/Buenos_Aires:\r\n 20210220T150000\r\nDTEND;\r\n TZID=/freeassociation.sourceforge.net/America/Argentina/Buenos_Aires:\r\n 20210220T160000\r\nDTSTAMP:20210219T032639Z\r\nUID:7ifh4m38uegnsjnfq7squcocuf@google.com\r\nCREATED:20210219T032531Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20210220T154407Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:2\r\nSTATUS:CONFIRMED\r\nSUMMARY:Clase andy\r\nTRANSP:TRANSPARENT\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nBEGIN:VALARM\r\nX-EVOLUTION-ALARM-UID:7f29ea817219e947a91382b6fedf9ebf1bca3d45\r\nTRIGGER;RELATED=START:-PT60M\r\nACTION:DISPLAY\r\nDESCRIPTION:Clase andy\r\nEND:VALARM\r\nBEGIN:VALARM\r\nX-EVOLUTION-ALARM-UID:a43247aeffd5434dc277825d0a2dbf9c621d05df\r\nTRIGGER;RELATED=START:-PT30M\r\nACTION:DISPLAY\r\nDESCRIPTION:Clase andy\r\nEND:VALARM\r\nEND:VEVENT\r\n']
 
 [org/gnome/desktop/interface]
 clock-show-date=true
@@ -197,7 +219,10 @@ clock-show-seconds=true
 gtk-theme='Adwaita-dark'
 
 [org/gnome/desktop/notifications]
-application-children=['firefox-esr', 'org-gnome-software', 'sublime-text', 'gnome-network-panel', 'org-gnome-nautilus', 'code', 'start-tor-browser', 'wine-programs-electronic-arts-need-for-speed-carbon-demo-uninstall-need-for-speed-carbon-demo', 'vlc', 'zoom', 'org-gnome-terminal', 'osu-', 'vlc-vlc', 'google-chrome']
+application-children=['firefox-esr', 'org-gnome-software', 'sublime-text', 'gnome-network-panel', 'org-gnome-nautilus', 'code', 'start-tor-browser', 'wine-programs-electronic-arts-need-for-speed-carbon-demo-uninstall-need-for-speed-carbon-demo', 'vlc', 'zoom', 'org-gnome-terminal', 'osu-', 'vlc-vlc', 'google-chrome', 'telegramdesktop', 'org-gnome-evolution-alarm-notify']
+
+[org/gnome/desktop/notifications/application/telegramdesktop]
+application-id='telegramdesktop.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -208,17 +233,23 @@ application-id='google-chrome.desktop'
 [org/gnome/desktop/notifications/application/start-tor-browser]
 application-id='start-tor-browser.desktop'
 
+[org/gnome/desktop/notifications/application/zoom]
+application-id='Zoom.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-evolution-alarm-notify]
+application-id='org.gnome.Evolution-alarm-notify.desktop'
+
 [org/gnome/desktop/notifications/application/vlc]
 application-id='vlc.desktop'
 
 [org/gnome/desktop/notifications/application/sublime-text]
 application-id='sublime_text.desktop'
 
-[org/gnome/desktop/notifications/application/gnome-network-panel]
-application-id='gnome-network-panel.desktop'
-
 [org/gnome/desktop/notifications/application/org-gnome-terminal]
 application-id='org.gnome.Terminal.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-network-panel]
+application-id='gnome-network-panel.desktop'
 
 [org/gnome/desktop/notifications/application/firefox-esr]
 application-id='firefox-esr.desktop'
@@ -226,14 +257,11 @@ application-id='firefox-esr.desktop'
 [org/gnome/desktop/notifications/application/wine-programs-electronic-arts-need-for-speed-carbon-demo-uninstall-need-for-speed-carbon-demo]
 application-id='wine-Programs-Electronic Arts-Need for Speed™ Carbon Demo-Uninstall Need for Speed™ Carbon Demo.desktop'
 
-[org/gnome/desktop/notifications/application/osu-]
-application-id='osu!.desktop'
-
-[org/gnome/desktop/notifications/application/zoom]
-application-id='Zoom.desktop'
-
 [org/gnome/desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
+
+[org/gnome/desktop/notifications/application/osu-]
+application-id='osu!.desktop'
 
 [org/gnome/desktop/notifications/application/vlc-vlc]
 application-id='vlc_vlc.desktop'
@@ -269,6 +297,7 @@ picture-options='zoom'
 secondary-color='#000000'
 
 [org/gnome/desktop/peripherals/touchpad]
+click-method='areas'
 tap-to-click=true
 send-events='enabled'
 
@@ -318,7 +347,7 @@ delay=0
 last-save-directory='file:///home/matheth/Pictures'
 
 [org/gnome/control-center]
-last-panel='bluetooth'
+last-panel='keyboard'
 
 [org/gnome/eog/view]
 background-color='rgb(0,0,0)'
@@ -354,6 +383,10 @@ width=600
 maximized=false
 height=500
 
+[org/gnome/evolution]
+default-calendar='c9822a0e6d48bb525718a7c1aec2a29ffc137331'
+version='3.30.5'
+
 [org/gnome/evolution/addressbook]
 completion-show-address=false
 completion-minimum-query-length=3
@@ -372,22 +405,28 @@ work-day-friday=true
 [org/gnome/evolution/shell]
 attachment-view=0
 
-[org/gnome/evolution]
-version='3.30.5'
-
 [org/gnome/Totem]
 subtitle-encoding='UTF-8'
 active-plugins=['screensaver', 'apple-trailers', 'variable-rate', 'autoload-subtitles', 'movie-properties', 'skipto', 'save-file', 'vimeo', 'media_player_keys', 'screenshot', 'recent']
 
 [org/gnome/gnome-system-monitor]
 show-dependencies=false
-maximized=false
+maximized=true
+window-state=(1366, 694, 0, 0)
 show-whose-processes='user'
-window-state=(700, 500, 26, 23)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-6-visible=true
 col-6-width=0
+
+[org/gnome/gnome-system-monitor/proctree]
+columns-order=[0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+sort-order=0
+sort-col=8
+
+[org/gnome/nm-applet/eap/48915d74-68ce-4995-beb1-3c9ded8000d6]
+ignore-phase2-ca-cert=false
+ignore-ca-cert=false
 
 [org/gnome/nm-applet/eap/f6fb7bd3-b9af-4192-8c88-bf496c328841]
 ignore-phase2-ca-cert=false
@@ -401,7 +440,7 @@ sort-column='name'
 sidebar-width=241
 window-position=(26, 23)
 show-size-column=true
-show-hidden=true
+show-hidden=false
 window-size=(1366, 694)
 sort-directories-first=false
 date-format='regular'
@@ -410,7 +449,7 @@ location-mode='path-bar'
 
 [org/gtk/settings/color-chooser]
 selected-color=(true, 0.0, 0.0, 0.0, 1.0)
-custom-colors=[(0.0, 0.16862745098039217, 0.21176470588235294, 1.0)]
+custom-colors=[(0.78431372549019607, 0.0, 0.011764705882352941, 1.0), (0.74509803921568629, 0.80784313725490198, 0.8666666666666667, 1.0), (0.0, 0.16862745098039217, 0.21176470588235294, 1.0)]
 
 [ca/desrt/dconf-editor]
 saved-view='/org/gnome/desktop/background/picture-uri'

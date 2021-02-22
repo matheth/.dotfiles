@@ -1,6 +1,6 @@
 [custom0]
 binding='<Primary><Alt>t'
-command='gnome-terminal'
+command='terminator'
 name='Terminal'
 
 [custom1]
