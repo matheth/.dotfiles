@@ -112,3 +112,4 @@ source /etc/zsh_command_not_found
 # use vim
 export VISUAL=vim
 export EDITOR="$VISUAL"
+export PATH=$PATH:/snap/bin
