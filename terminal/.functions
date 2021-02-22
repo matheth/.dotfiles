@@ -115,3 +115,26 @@ function set-background-lockscreen(){
     echo $var
     gsettings set org.gnome.desktop.screensaver picture-uri "$var"
 }
+
+# backup keybindings
+function backup-keybindings(){
+    dconf dump '/org/gnome/desktop/wm/keybindings/' > ~/.dotfiles/backups/.backups/keybindings.dconf
+    dconf dump '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' > ~/.dotfiles/backups/.backups/custom-keybindings.dconf
+}
+
+# backup installed software
+function backup-installed-software(){
+	dpkg --get-selections > ~/.dotfiles/backups/.backups/installed-software.log
+}
+
+# backup entire settings
+function backup-system(){
+	dconf dump / > ~/.dotfiles/backups/.backups/full-backup
+}
+
+# do a full backup
+function backup-full(){
+	backup-keybindings
+	backup-installed-software
+	backup-system
+}
