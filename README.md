@@ -50,7 +50,7 @@ All together:
 
 - -D flag: unstow (or unlink)
 
-### Backup wider system files
+### Backup explanation and commands
 
 #### Keyboard:
 [link to full explanation](https://askubuntu.com/questions/682513/how-to-backup-restore-system-custom-keyboard-shortcuts#844907)
