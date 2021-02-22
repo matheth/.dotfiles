@@ -132,9 +132,15 @@ function backup-system(){
 	dconf dump / > ~/.dotfiles/backups/.backups/full-backup
 }
 
+# backup crontabs
+function backup-crontab(){
+	crontab -l > ~/.dotfiles/crontabs/.crontabs/crontab.save.dinh
+}
+
 # do a full backup
 function backup-full(){
 	backup-keybindings
 	backup-installed-software
 	backup-system
+	backup-crontabs
 }
