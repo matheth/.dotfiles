@@ -84,12 +84,15 @@ The following example saves the above Dconf directories to two files keybindings
 
 
 ##### Backup
+
 ```
-	dpkg --get-selections > installed-software.log
+	dpkg --get-selections > ~/.dotfiles/programs/installed-software.log
 ```
+
 ##### Restore
+
 ```
-	dpkg --set-selections < installed-software.log
+	dpkg --set-selections < ~/.dotfiles/programs/installed-software.log
 	apt-get dselect-upgrade
 ```
 
@@ -97,25 +100,28 @@ The following example saves the above Dconf directories to two files keybindings
 [link to full explanation](https://www.addictivetips.com/ubuntu-linux-tips/back-up-the-gnome-shell-desktop-settings-linux/)
 
 
-### Back Up Gnome Settings
+### Back Up System Settings
 
 Creating a full backup with Dconf will allow you to save all Dconf settings and configurations, along with the Gnome Shell desktop environment. For most users this is overkill. However, if you’re paranoid and want to ensure that every setting is safe, this is the way to go.
 
 #### Backup
 Open up a terminal and use the dconf dump command to export the entire Dconf database to your Linux PC. DO NOT USE SUDO!
+
 ```
-	dconf dump / > full-backup
+	dconf dump / > ~/.dotfiles/system-wide-backups/Documents/backups/dconf-backups/full-backup
 ```
+
 The settings dump is complete. The next step is to look over the contents of the file, to verify that the backup ran correctly. Using cat will print the contents of the data in a terminal, and allow you to look it over.
 
 ```
-	cat ~/full-backup
+	cat ~/.dotfiles/system-wide-backups/Documents/backups/dconf-backups/full-backup
 ```
-If everything looks good, type clear and create a new folder in ~/Documents to hold the backup file. Keeping the Dconf backup in a separate folder will ensure that it doesn’t get accidentally deleted.
+
+If everything looks good, type clear and create a new folder in ~/Documents to hold the backup file. 
 
 ```
 	mkdir -p ~/Documents/dconf-backups/
-	mv full-backup ~/Documents/dconf-backups/
+	touch ~/Documents/dconf-backups/full-backup 
 ```
 
 #### Restore Backup
