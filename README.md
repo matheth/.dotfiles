@@ -141,3 +141,29 @@ Start the restoration process by importing the Dconf backup file into the system
 ```
 	dconf load / < \<file\>
 ```
+
+### Crontabs
+[link to full explanation](https://blog.pythian.com/how-to-efficiently-backup-and-restore-crontab/)
+
+#### Backup
+
+Backup crontab and display contents. Extra precaution in case crontab.save.dinh is removed.
+```
+	crontab -l > ~/.dotfiles/crontabs/.crontabs/crontab.save.dinh
+```
+
+#### Restore
+
+1. Remove crontab.
+
+```
+	crontab -r; crontab -l
+```
+
+2. Restore crontab.
+
+```
+	crontab ~/.dotfiles/crontabs/.crontabs/crontab.save.dinh; crontab -l
+```
+
+
