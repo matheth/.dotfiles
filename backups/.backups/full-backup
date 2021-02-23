@@ -7,10 +7,13 @@ shared-path='/home/matheth/Downloads'
 
 [org/gnome/software]
 first-run=false
-check-timestamp=int64 1613916176
+check-timestamp=int64 1614073393
 
 [org/gnome/GWeather]
 temperature-unit='centigrade'
+
+[org/gnome/settings-daemon/plugins/power]
+idle-dim=true
 
 [org/gnome/settings-daemon/plugins/media-keys]
 max-screencast-length=uint32 120
@@ -68,7 +71,7 @@ numlock-state='off'
 
 [org/gnome/shell]
 app-picker-view=uint32 1
-command-history=['deconf-editor', 'dconf-editor', 'software-properties-gtk', 'code ~/Desktop/test/web/react', 'code', 'subl', 'gnome-calendar', 'terminator']
+command-history=['deconf-editor', 'dconf-editor', 'software-properties-gtk', 'code ~/Desktop/test/web/react', 'code', 'subl', 'gnome-calendar', 'terminator', 'crontab -e']
 enabled-extensions=['DesktopIconsSwitch@bananenfisch.net', 'dash-to-dock@micxgx.gmail.com', 'taskbar@ttux.net', 'show-desktop@l300lvl.tk', 'screenshotlocations.timur@linux.com', 'bluetooth-quick-connect@bjarosze.gmail.com']
 had-bluetooth-devices-setup=true
 favorite-apps=['firefox-esr.desktop', 'google-chrome.desktop', 'code.desktop', 'org.gnome.Nautilus.desktop', 'osu!.desktop', 'telegramdesktop.desktop', 'slack.desktop']
@@ -125,13 +128,14 @@ source-units='degree'
 accuracy=9
 
 [org/gnome/clocks]
-alarms=[{'name': <'Alarm'>, 'id': <'ddfaede99a089b18c722347e5fe2370c'>, 'active': <true>, 'hour': <16>, 'minute': <20>, 'days': <@ai []>}]
+timer=uint32 1
+alarms=[{'name': <'Alarm'>, 'id': <'ddfaede99a089b18c722347e5fe2370c'>, 'active': <false>, 'hour': <2>, 'minute': <30>, 'days': <[1, 2, 3, 4, 5]>}]
 world-clocks=[{'location': <(uint32 2, <('Buenos Aires', 'SABE', true, [(-0.60330215059047076, -1.0195631771911182)], [(-0.6036657550335387, -1.024028305376373)])>)>}]
 
 [org/gnome/clocks/state/window]
 size=(870, 690)
 state=87168
-panel-id='world'
+panel-id='timer'
 
 [org/gnome/Weather/Application]
 locations=[<(uint32 2, <('Buenos Aires', 'SABE', true, [(-0.60330215059047076, -1.0195631771911182)], [(-0.6036657550335387, -1.024028305376373)])>)>, <(uint32 2, <('El Palomar Airport', 'SADP', false, [(-0.60388392119003798, -1.0227629416686772)], [(-0.6028658182774721, -1.023029593071797)])>)>, <(uint32 2, <('El Palomar Airport', 'SADP', false, [(-0.60388392119003798, -1.0227629416686772)], [(-0.6028658182774721, -1.023029593071797)])>)>, <(uint32 2, <('El Palomar Airport', 'SADP', false, [(-0.60388392119003798, -1.0227629416686772)], [(-0.6028658182774721, -1.023029593071797)])>)>, <(uint32 2, <('El Palomar Airport', 'SADP', false, [(-0.60388392119003798, -1.0227629416686772)], [(-0.6028658182774721, -1.023029593071797)])>)>]
@@ -162,7 +166,7 @@ window-size=(840, 694)
 
 [org/gnome/file-roller/listing]
 sort-method='name'
-name-column-width=250
+name-column-width=455
 sort-type='ascending'
 list-mode='as-folder'
 show-path=false
@@ -209,7 +213,7 @@ notify-window-height=163
 notify-window-x=26
 notify-window-y=23
 notify-window-width=576
-reminders-past=['c9822a0e6d48bb525718a7c1aec2a29ffc137331\n7f29ea817219e947a91382b6fedf9ebf1bca3d45\n1613840400\n1613844000\n1613847600\nBEGIN:VEVENT\r\nDTSTART;\r\n TZID=/freeassociation.sourceforge.net/America/Argentina/Buenos_Aires:\r\n 20210220T150000\r\nDTEND;\r\n TZID=/freeassociation.sourceforge.net/America/Argentina/Buenos_Aires:\r\n 20210220T160000\r\nDTSTAMP:20210219T032639Z\r\nUID:7ifh4m38uegnsjnfq7squcocuf@google.com\r\nCREATED:20210219T032531Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20210220T154407Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:2\r\nSTATUS:CONFIRMED\r\nSUMMARY:Clase andy\r\nTRANSP:TRANSPARENT\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nBEGIN:VALARM\r\nX-EVOLUTION-ALARM-UID:7f29ea817219e947a91382b6fedf9ebf1bca3d45\r\nTRIGGER;RELATED=START:-PT60M\r\nACTION:DISPLAY\r\nDESCRIPTION:Clase andy\r\nEND:VALARM\r\nBEGIN:VALARM\r\nX-EVOLUTION-ALARM-UID:a43247aeffd5434dc277825d0a2dbf9c621d05df\r\nTRIGGER;RELATED=START:-PT30M\r\nACTION:DISPLAY\r\nDESCRIPTION:Clase andy\r\nEND:VALARM\r\nEND:VEVENT\r\n']
+reminders-past=['1d1a1feadc650f9e42cef9f8bf059cda8b5687c0\n74b43a3b1592b763b9fe11cc93eab9e2a52ea320\n1614088200\n1614088800\n1614090600\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Toronto:20210222T090000\r\nDTEND;TZID=America/Toronto:20210222T093000\r\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH;WKST=SU\r\nDTSTAMP:20210222T134957Z\r\nORGANIZER;CN=David Ker Zination:mailto:dker@zination.com\r\nUID:6msam0ljlt0lvg9dt0qcdti3nl_R20210222T140000@google.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;\r\n CN=nayla.novo@zination.com;X-NUM-GUESTS=0:mailto:nayla.novo@zination.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;\r\n CN=David Ker Zination;X-NUM-GUESTS=0:mailto:dker@zination.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;\r\n CN=matias.ganan@zination.com;X-NUM-GUESTS=0:mailto:\r\n matias.ganan@zination.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;\r\n CN=mehdi@zination.com;X-NUM-GUESTS=0:mailto:mehdi@zination.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;\r\n CN=santiago.dperone@zination.com;X-NUM-GUESTS=0:mailto:\r\n santiago.dperone@zination.com\r\nATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;\r\n CN=agustin.arias@zination.com;X-NUM-GUESTS=0:mailto:\r\n agustin.arias@zination.com\r\nCREATED:20210122T134016Z\r\nDESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:\r\n ~:~:~:~:~:~:~:~:~::~:~::-\\nPlease do not edit this section of the \r\n description.\\n\\nThis event has a video call.\\nJoin: https:\r\n //meet.google.com/eot-ukwv-ird\\n(CA) +1 226-214-5609 PIN: \r\n 109646463#\\nView more phone numbers: https:\r\n //tel.meet/eot-ukwv-ird?pin=6504531836956&hs=7\\n-::~:~::~:~:~:~:~:~:~:~:~:\r\n ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\r\nLAST-MODIFIED:20210222T134957Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Daily SCRUM\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63749684997\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:74b43a3b1592b763b9fe11cc93eab9e2a52ea320\r\nEND:VALARM\r\nEND:VEVENT\r\n']
 
 [org/gnome/desktop/interface]
 clock-show-date=true
@@ -219,7 +223,7 @@ clock-show-seconds=true
 gtk-theme='Adwaita-dark'
 
 [org/gnome/desktop/notifications]
-application-children=['firefox-esr', 'org-gnome-software', 'sublime-text', 'gnome-network-panel', 'org-gnome-nautilus', 'code', 'start-tor-browser', 'wine-programs-electronic-arts-need-for-speed-carbon-demo-uninstall-need-for-speed-carbon-demo', 'vlc', 'zoom', 'org-gnome-terminal', 'osu-', 'vlc-vlc', 'google-chrome', 'telegramdesktop', 'org-gnome-evolution-alarm-notify']
+application-children=['firefox-esr', 'org-gnome-software', 'sublime-text', 'gnome-network-panel', 'org-gnome-nautilus', 'code', 'start-tor-browser', 'wine-programs-electronic-arts-need-for-speed-carbon-demo-uninstall-need-for-speed-carbon-demo', 'vlc', 'zoom', 'org-gnome-terminal', 'osu-', 'vlc-vlc', 'google-chrome', 'telegramdesktop', 'org-gnome-evolution-alarm-notify', 'org-gnome-clocks', 'mailspring']
 
 [org/gnome/desktop/notifications/application/telegramdesktop]
 application-id='telegramdesktop.desktop'
@@ -230,11 +234,11 @@ application-id='org.gnome.Nautilus.desktop'
 [org/gnome/desktop/notifications/application/google-chrome]
 application-id='google-chrome.desktop'
 
+[org/gnome/desktop/notifications/application/mailspring]
+application-id='mailspring.desktop'
+
 [org/gnome/desktop/notifications/application/start-tor-browser]
 application-id='start-tor-browser.desktop'
-
-[org/gnome/desktop/notifications/application/zoom]
-application-id='Zoom.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-evolution-alarm-notify]
 application-id='org.gnome.Evolution-alarm-notify.desktop'
@@ -245,26 +249,32 @@ application-id='vlc.desktop'
 [org/gnome/desktop/notifications/application/sublime-text]
 application-id='sublime_text.desktop'
 
-[org/gnome/desktop/notifications/application/org-gnome-terminal]
-application-id='org.gnome.Terminal.desktop'
-
 [org/gnome/desktop/notifications/application/gnome-network-panel]
 application-id='gnome-network-panel.desktop'
-
-[org/gnome/desktop/notifications/application/firefox-esr]
-application-id='firefox-esr.desktop'
-
-[org/gnome/desktop/notifications/application/wine-programs-electronic-arts-need-for-speed-carbon-demo-uninstall-need-for-speed-carbon-demo]
-application-id='wine-Programs-Electronic Arts-Need for Speed™ Carbon Demo-Uninstall Need for Speed™ Carbon Demo.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
 
+[org/gnome/desktop/notifications/application/firefox-esr]
+application-id='firefox-esr.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-terminal]
+application-id='org.gnome.Terminal.desktop'
+
 [org/gnome/desktop/notifications/application/osu-]
 application-id='osu!.desktop'
 
+[org/gnome/desktop/notifications/application/zoom]
+application-id='Zoom.desktop'
+
+[org/gnome/desktop/notifications/application/wine-programs-electronic-arts-need-for-speed-carbon-demo-uninstall-need-for-speed-carbon-demo]
+application-id='wine-Programs-Electronic Arts-Need for Speed™ Carbon Demo-Uninstall Need for Speed™ Carbon Demo.desktop'
+
 [org/gnome/desktop/notifications/application/vlc-vlc]
 application-id='vlc_vlc.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-clocks]
+application-id='org.gnome.clocks.desktop'
 
 [org/gnome/desktop/notifications/application/code]
 application-id='code.desktop'
@@ -323,6 +333,13 @@ show-desktop=['<Primary><Alt>d']
 switch-applications-backward=@as []
 switch-windows-backward=['<Shift><Alt>Tab']
 
+[org/gnome/desktop/session]
+idle-delay=uint32 300
+
+[org/gnome/desktop/sound]
+theme-name='__custom'
+event-sounds=true
+
 [org/gnome/desktop/datetime]
 automatic-timezone=true
 
@@ -347,7 +364,7 @@ delay=0
 last-save-directory='file:///home/matheth/Pictures'
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='online-accounts'
 
 [org/gnome/eog/view]
 background-color='rgb(0,0,0)'

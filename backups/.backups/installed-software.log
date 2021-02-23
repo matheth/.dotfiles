@@ -27,6 +27,7 @@ aspell						install
 aspell-en					install
 asymptote					install
 asymptote-doc					install
+at						install
 at-spi2-core					install
 atom						install
 avahi-autoipd					install
@@ -298,6 +299,7 @@ gcc-8						install
 gcc-8-base:amd64				install
 gcc-8-base:i386					install
 gconf-service					install
+gconf2						install
 gconf2-common					install
 gcr						install
 gdbm-l10n					install
@@ -526,6 +528,7 @@ hp-ppd						install
 hplip						install
 hplip-data					install
 html-xml-utils					install
+htop						install
 httpie						install
 hunspell-en-us					install
 hyphen-en-us					install
@@ -936,6 +939,7 @@ libfile-mimeinfo-perl				install
 libfile-sharedir-perl				install
 libfile-slurper-perl				install
 libfile-which-perl				install
+libfl2:amd64					install
 libflac8:amd64					install
 libflac8:i386					install
 libflite1:amd64					install
@@ -1787,6 +1791,7 @@ libsdl2-2.0-0:amd64				install
 libsdl2-2.0-0:i386				install
 libseccomp2:amd64				install
 libsecret-1-0:amd64				install
+libsecret-1-dev:amd64				install
 libsecret-common				install
 libselinux1:amd64				install
 libselinux1:i386				install
@@ -2239,6 +2244,7 @@ lxsession-logout				install
 lxtask						install
 lxterminal					install
 m17n-db						install
+mailspring					install
 mailutils					install
 mailutils-common				install
 make						install
