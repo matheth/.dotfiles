@@ -37,3 +37,8 @@ name='Weather'
 binding='<Primary><Alt>c'
 command='gnome-calendar'
 name='Calendar'
+
+[custom8]
+binding='<Primary><Alt>m'
+command='mailspring'
+name='Mailspring'
