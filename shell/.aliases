@@ -74,3 +74,6 @@ alias venv-start="source bin/activate"
 
 # end python virtual env
 alias venv-end="deactivate"
+
+# start angular project with boilerplate
+alias angular-start="wget https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js https://code.angularjs.org/1.8.2/angular-route.min.js"
