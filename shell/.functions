@@ -144,3 +144,9 @@ function backup-full(){
 	backup-system
 	backup-crontabs
 }
+
+# sound alarm
+function alarm-on(){
+	amixer sset 'Master' 100%
+	mplayer -loop 0 /home/matheth/Desktop/ALARM-CLOCK-DONT-DELETE/Alarm-ringtone.mp3
+}
