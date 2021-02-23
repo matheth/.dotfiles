@@ -10,7 +10,15 @@ export ZSH="/home/matheth/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="afowler"
+# ZSH_THEME="afowler"
+
+# add customized theme based on afowler
+if [ -f ~/.zsh_prompt ]; then
+    source ~/.zsh_prompt
+else
+    print "404: ~/.zsh_prompt not found."
+fi
+
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
