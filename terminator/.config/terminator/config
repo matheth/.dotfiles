@@ -1,0 +1,21 @@
+[global_config]
+  title_transmit_bg_color = "#000000"
+  title_use_system_font = False
+  title_font = Sans 14
+[keybindings]
+  split_horiz = <Shift><Alt>Down
+  split_vert = <Shift><Alt>Right
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+    font = Monospace 15
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
