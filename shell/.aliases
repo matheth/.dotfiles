@@ -65,3 +65,7 @@ alias money="vim ~/Desktop/money.txt"
 
 # vimrc alias
 alias vimrc="vim ~/.vimrc"
+
+# kill alarm
+alias alarm-off="source ~/.zshrc;sleep 1s;kill $(ps aux | grep mplayer | grep -v grep | sed 's/matheth[ ]*//' | sed 's/  .*//')"
+
