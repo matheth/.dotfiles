@@ -166,4 +166,15 @@ Backup crontab and display contents. Extra precaution in case crontab.save.dinh 
 	crontab ~/.dotfiles/crontabs/.crontabs/crontab.save.dinh; crontab -l
 ```
 
+### Zsh
+#### Install zsh
 
+```
+	sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+#### Install autosuggestions
+
+```
+	git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
