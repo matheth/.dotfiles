@@ -69,3 +69,8 @@ alias vimrc="vim ~/.vimrc"
 # kill alarm
 alias alarm-off="source ~/.zshrc;sleep 1s;kill $(ps aux | grep mplayer | grep -v grep | sed 's/matheth[ ]*//' | sed 's/  .*//')"
 
+# start python virtual env
+alias venv-start="source bin/activate"
+
+# end python virtual env
+alias venv-end="deactivate"
