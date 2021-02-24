@@ -92,7 +92,7 @@ The following example saves the above Dconf directories to two files keybindings
 
 ```
 	dpkg --set-selections < ~/.dotfiles/backups/.backups/installed-software.log
-	apt-get dselect-upgrade
+	sudo apt-get dselect-upgrade
 ```
 
 #### System backup
