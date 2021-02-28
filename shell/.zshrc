@@ -114,3 +114,8 @@ source /etc/zsh_command_not_found
 export VISUAL=vim
 export EDITOR="$VISUAL"
 export PATH=$PATH:/snap/bin
+
+
+# load nvm
+source ~/.nvm/nvm.sh
+
