@@ -74,3 +74,8 @@ alias venv-end="deactivate"
 
 # start angular project with boilerplate
 alias angular-seed="git clone --depth=1 https://github.com/angular/angular-seed.git"
+
+# check what networks are around you (after activating monitor mode with sudo airmon-ng <INTERFACE> (you can get the interface with sudo airmong-ng))
+alias networks="sudo airodump-ng wlp1s0mon --m"
+alias dos-start="~/Desktop/wifi-experiments/dos-start.sh"
+alias dos-stop="~/Desktop/wifi-experiments/dos-stop.sh"
