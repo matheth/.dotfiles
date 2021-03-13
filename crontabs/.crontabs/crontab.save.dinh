@@ -8,4 +8,8 @@
 # │ │ │ │ │
 # * * * * *  command_to_execute
 
-5 8 * * 0 backup-full
+# tool: https://crontab.guru/
+
+# At 08:05 on Sunday
+5 8 * * 0 bash --login -c "backup-full"
+
