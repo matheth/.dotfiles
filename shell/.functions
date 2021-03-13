@@ -142,7 +142,7 @@ function backup-full(){
 	backup-keybindings
 	backup-installed-software
 	backup-system
-	backup-crontabs
+	backup-crontab
 }
 
 # sound alarm
