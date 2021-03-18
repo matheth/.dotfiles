@@ -124,7 +124,7 @@ function backup-keybindings(){
 
 # backup installed software
 function backup-installed-software(){
-	dpkg --get-selections > ~/.dotfiles/backups/.backups/installed-software.log
+	dpkg --get-selections  | awk '{ print $1 }' > ~/.dotfiles/backups/.backups/installed-software.log
 }
 
 # backup entire settings

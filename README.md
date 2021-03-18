@@ -84,15 +84,15 @@ The following example saves the above Dconf directories to two files keybindings
 
 ##### Backup
 
+We get only the list of packages
 ```
-	dpkg --get-selections > ~/.dotfiles/backups/.backups/installed-software.log
+	dpkg --get-selections | awk '{ print $1 }' > ~/.dotfiles/backups/.backups/installed-software.log
 ```
 
 ##### Restore
 
 ```
-	dpkg --set-selections < ~/.dotfiles/backups/.backups/installed-software.log
-	sudo apt-get dselect-upgrade
+	while read package; do sudo apt-get install "$package"; done < ~/.dotfiles/backup/.backups/installed-software.log
 ```
 
 #### System backup
