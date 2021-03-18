@@ -4,3 +4,4 @@ sublime/.config/sublime-text-3/Index/**
 sublime/.config/sublime-text-3/Local/**
 0_package_control_loader.sublime-package-intermediate
 0_package_control_loader.sublime-package-new
+shell/.oh-my-zsh/custom/**
