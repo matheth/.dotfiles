@@ -92,7 +92,7 @@ We get only the list of packages
 ##### Restore
 
 ```
-	while read package; do sudo apt-get install "$package"; done < ~/.dotfiles/backup/.backups/installed-software.log
+	while read package; do sudo apt-get -y install "$package"; done < ~/.dotfiles/backup/.backups/installed-software.log
 ```
 
 #### System backup
