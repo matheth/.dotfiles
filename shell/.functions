@@ -37,7 +37,7 @@ function gcl(){
    if ! $? ; then
        parent_directory=$(pwd)
        full_path="$parent_directory/$name_of_repo"
-       grep $name_of_repo ~/git-repos-globally.txt &>/dev/null || echo $full_path >> ~/git-repos-globally.txt
+       grep $name_of_repo ~/.git-repos-globally.txt &>/dev/null || echo $full_path >> ~/.git-repos-globally.txt
    fi
 }
 
@@ -46,18 +46,18 @@ function gi(){
    git init
     current_dir=$(pwd)
    echo $current_dir
-   grep $current_dir ~/git-repos-globally.txt &>/dev/null || echo $current_dir >> ~/git-repos-globally.txt
+   grep $current_dir ~/.git-repos-globally.txt &>/dev/null || echo $current_dir >> ~/.git-repos-globally.txt
 }
 
 # find all repositories in this system
 function find-git(){
-    repos=~/git-repos-globally.txt
+    repos=~/.git-repos-globally.txt
     if [ -f "$repos" ] && [ -s $repos ] && [ "$1" != '-f' ]; then
         # repos file exists, is not empty, and the -f flag isn't being used
         cat $repos
         return 0
     else
-       find ~ -name ".git" > ~/git-repos-globally.txt
+       find ~ -name ".git" > ~/.git-repos-globally.txt
        cat $repos
         return 127
     fi
@@ -69,14 +69,14 @@ function find-git-status(){
     no_repos_changed=true
 	if [ "$1" = "-f" ]; then
 		echo "Creating a repositories index from scratch"
-		find ~ -name ".git" > ~/git-repos-globally.txt
+		find ~ -name ".git" > ~/.git-repos-globally.txt
 	elif find-git &>/dev/null; then
 		echo "A repositories index has been found..."
 	else
 		echo "No repositores index found, creating one from scratch..."
-		find ~ -name ".git" > ~/git-repos-globally.txt
+		find ~ -name ".git" > ~/.git-repos-globally.txt
 	fi
-		repos=( $(cat ~/git-repos-globally.txt) )
+		repos=( $(cat ~/.git-repos-globally.txt) )
 	for d in $repos; do
 		cd $d/..;
 		if ! git diff-index --quiet HEAD --; then
