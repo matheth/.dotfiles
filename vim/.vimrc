@@ -84,7 +84,7 @@ set showcmd
 
 set tabstop=4
 
-" Ctrl + c, x and v
+" normal copy/paste
 vmap <C-c> "+yi
 vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
