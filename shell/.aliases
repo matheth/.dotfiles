@@ -79,3 +79,6 @@ alias angular-seed="git clone --depth=1 https://github.com/angular/angular-seed.
 alias networks="sudo airodump-ng wlp1s0mon --m"
 alias dos-start="~/Desktop/wifi-experiments/dos-start.sh"
 alias dos-stop="~/Desktop/wifi-experiments/dos-stop.sh"
+
+# python alias
+alias python="python3"
