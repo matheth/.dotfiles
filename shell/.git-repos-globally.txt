@@ -1,1 +1,12 @@
 /home/matheth/.dotfiles
+/home/matheth/Desktop/Money-manager
+/home/matheth/Desktop/osu/osu-install
+/home/matheth/Desktop/Zination/project/https:/hub.com/RealWatCompany/Zination
+/home/matheth/bash_scripts
+/home/matheth/Desktop/change-background
+/home/matheth/Desktop/Curso-Fullstack/Sprint2/ARo
+/home/matheth/Desktop/cv
+/home/matheth/Desktop/meme/DCSwap/https:/hub.com/pancakeswap/pancakeswap-sdk-v1
+/home/matheth/Desktop/portfolio/github.com:agustin-arias/simplefolio
+/home/matheth/Desktop/portfolio/github.com:agustin-arias/gatsby-simplefolio
+/home/matheth/Desktop/github/github.com:agustin-arias/Best-README-Template
