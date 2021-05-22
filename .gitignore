@@ -7,4 +7,26 @@ sublime/.config/sublime-text-3/Local/**
 shell/.oh-my-zsh/custom/**
 vscode/.config/Code/Cache/**
 vscode/.config/Code/CachedData/**
-
+vscode/.config/Code/Backups/**
+vscode/.config/Code/CachedExtensions/**
+vscode/.config/Code/Code Cache/**
+vscode/.config/Code/Cookies**
+vscode/.config/Code/Cookies-journal**
+vscode/.config/Code/Crash Reports/**
+vscode/.config/Code/GPUCache/**
+vscode/.config/Code/Local Storage/**
+vscode/.config/Code/Network Persistent State**
+vscode/.config/Code/Session Storage/**
+vscode/.config/Code/TransportSecurity**
+vscode/.config/Code/User/globalStorage/**
+vscode/.config/Code/User/sync/**
+vscode/.config/Code/User/workspaceStorage/**
+vscode/.config/Code/exthost Crash Reports/**
+vscode/.config/Code/languagepacks.json**
+vscode/.config/Code/logs/**
+vscode/.config/Code/machineid**
+vscode/.config/Code/rapid_render.json**
+vscode/.config/Code/storage.json**
+vscode/.config/Code/test/**
+vscode/.config/test/**
+**
