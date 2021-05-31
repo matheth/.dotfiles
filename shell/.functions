@@ -150,3 +150,8 @@ function alarm-on(){
 	amixer sset 'Master' 100%
 	mplayer -loop 0 /home/matheth/Desktop/ALARM-CLOCK-DONT-DELETE/Alarm-ringtone.mp3
 }
+
+# cat and less function
+function cless(){
+	cat "$1" | less
+}
