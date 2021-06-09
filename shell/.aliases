@@ -11,6 +11,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias cdD="cd ~/Desktop"
+alias cdd="cdD"
 
 # remove dir
 alias rmd="rm -rf"
@@ -82,3 +83,7 @@ alias dos-stop="~/Desktop/wifi-experiments/dos-stop.sh"
 
 # python alias
 alias python="python3"
+
+# cd github
+alias cdg="cd ~/Desktop/github"
+alias cdG="cdg"
