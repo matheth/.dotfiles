@@ -17,5 +17,8 @@
   "editor.tabSize": 2,
   "liveServer.settings.CustomBrowser": "chrome",
   "workbench.startupEditor": "newUntitledFile",
-  "autoimport.filesToScan": "**/*.{ts,tsx,js,jsx}"
+  "autoimport.filesToScan": "**/*.{ts,tsx,js,jsx}",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  }
 }
