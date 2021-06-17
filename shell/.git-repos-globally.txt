@@ -12,8 +12,8 @@
 /home/matheth/Desktop/github/Best-README-Template/.git
 /home/matheth/Desktop/github/nurikabe-solver/.git
 /home/matheth/Desktop/github/CAS-React/.git
+/home/matheth/Desktop/github/codewars/.git
 /home/matheth/Desktop/osu-install/.git
-/home/matheth/Desktop/examples/asdasdasd/.git
 /home/matheth/Desktop/Zination/project/ZINATION_PROJECT/Zination/.git
 /home/matheth/.nvm/.git
 /home/matheth/giac-electron-example/.git
