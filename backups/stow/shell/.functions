@@ -155,3 +155,8 @@ function alarm-on(){
 function cless(){
 	cat "$1" | less
 }
+
+# create a backup of code keybindings and settings
+function backup-code(){
+	cp ~/.config/VSCodium/User/{keybindings,settings}.json ~/.dotfiles/
+}
