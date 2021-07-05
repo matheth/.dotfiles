@@ -156,7 +156,8 @@ function cless(){
 	cat "$1" | less
 }
 
-# create a backup of code keybindings and settings
-function backup-code(){
-	cp ~/.config/VSCodium/User/{keybindings,settings}.json ~/.dotfiles/
+# create a backup of codium keybindings and settings
+function backup-codium(){
+	cp ~/.config/VSCodium/User/{keybindings,settings}.json ~/.dotfiles/backups/periodic-backup/codium
+	codium --list-extensions > ~/.dotfiles/backups/periodic-backup/codium/extensions_list.txt
 }
