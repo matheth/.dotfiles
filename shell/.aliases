@@ -87,3 +87,6 @@ alias python="python3"
 # cd github
 alias cdg="cd ~/Desktop/github"
 alias cdG="cdg"
+
+# cd resume
+alias resume="cd ~/Desktop/github/resume"
