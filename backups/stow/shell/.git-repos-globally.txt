@@ -20,3 +20,9 @@
 /home/matheth/.dotfiles/.git
 /home/matheth/.oh-my-zsh/.git
 /home/matheth/.oh-my-zsh/custom/plugins/zsh-autosuggestions/.git
+/home/matheth/Desktop/Zination/project/ZINATION_PROJECT/https:/hub.com/RealWatCompany/Zination
+/home/matheth/Desktop/Trebol/repositories/gitlab.trebol-it.com:alemana/admision/api-admision
+/home/matheth/Desktop/Trebol/repositories/gitlab.trebol-it.com:alemana/admision/web-admision
+/home/matheth/Desktop/Trebol/repositories/gitlab.trebol-it.com:alemana/telemedicina/api-telemedicina
+/home/matheth/Desktop/Trebol/repositories/gitlab.trebol-it.com:alemana/admision/postgres
+/home/matheth/Desktop/github/github.com:agustin-arias/Resume

@@ -90,3 +90,12 @@ alias cdG="cdg"
 
 # cd resume
 alias resume="cd ~/Desktop/github/resume"
+
+# cd trebol folder
+alias trebol="cd ~/Desktop/Trebol"
+
+# postgres trebol
+alias postgres-trebol="psql -h 10.97.96.3 -U admision -d admision4"
+
+
+

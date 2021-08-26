@@ -38,4 +38,4 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 export PATH=$PATH:/snap/bin
 
-
+export PATH=/usr/local/bin:$PATH

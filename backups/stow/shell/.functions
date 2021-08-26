@@ -161,3 +161,23 @@ function backup-codium(){
 	cp ~/.config/VSCodium/User/{keybindings,settings}.json ~/.dotfiles/backups/periodic-backup/codium
 	codium --list-extensions > ~/.dotfiles/backups/periodic-backup/codium/extensions_list.txt
 }
+
+# web-admision
+function web-admision(){
+    trebol
+	repositories/web-admision
+    npm start
+}
+
+# api-admision
+function api-admision(){
+    trebol
+	repositories/api-admision
+    npm run start:dev
+}
+
+# mongo-trebol
+function mongo-trebol(){
+    trebol
+    kubectl port-forward api-admision-mongo-stateful-set-1 27017:27017
+}
