@@ -13,25 +13,25 @@ end
 
 # Add a file and commit with a message
 function gacm -d "Add a file and commit with a message"
-  git add "$1"
-  git commit -m "$2"
+  git add $argv[1]
+  git commit -m $argv[2]
 end
 
 # Add a file, commit with a message, and push
 function gacmp -d "Add a file, commit with a message, and push"
-	gacm "$1" "$2"
+	gacm $argv[1] $argv[2]
   git push
 end
 
 # Add a file, commit with a message, and push
 function gcmp -d "Add a file, commit with a message, and push"
-	gcm "$1" 
+	gcm $argv[1] 
   git push
 end
 
 # Clone a repository
 function gcl -d "Clone a repository"
-  git clone "$1"
+  git clone $argv[1]
 end
 
 # Initialize an empty repository
