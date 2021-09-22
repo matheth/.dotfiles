@@ -1,6 +1,6 @@
 [/]
-switch-windows=['<Alt>Tab']
-switch-applications=@as []
 show-desktop=['<Primary><Alt>d']
+switch-applications=@as []
 switch-applications-backward=@as []
+switch-windows=['<Alt>Tab']
 switch-windows-backward=['<Shift><Alt>Tab']

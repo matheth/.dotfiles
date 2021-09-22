@@ -118,23 +118,29 @@ function set-background-lockscreen(){
 
 # backup keybindings
 function backup-keybindings(){
-    dconf dump '/org/gnome/desktop/wm/keybindings/' > ~/.dotfiles/backups/.backups/keybindings.dconf
-    dconf dump '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' > ~/.dotfiles/backups/.backups/custom-keybindings.dconf
+    dconf dump '/org/gnome/desktop/wm/keybindings/' > ~/.dotfiles/backups/stow/backups/.backups/keybindings.dconf
+    dconf dump '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' > ~/.dotfiles/backups/stow/backups/.backups/custom-keybindings.dconf
 }
 
 # backup installed software
 function backup-installed-software(){
-	dpkg --get-selections  | awk '{ print $1 }' > ~/.dotfiles/backups/.backups/installed-software.log
+	dpkg --get-selections  | awk '{ print $1 }' > ~/.dotfiles/backups/stow/backups/.backups/installed-software.log
 }
 
 # backup entire settings
 function backup-system(){
-	dconf dump / > ~/.dotfiles/backups/.backups/full-backup
+	dconf dump / > ~/.dotfiles/backups/stow/backups/.backups/full-backup
 }
 
 # backup crontabs
 function backup-crontab(){
-	crontab -l > ~/.dotfiles/crontabs/.crontabs/crontab.save.dinh
+	crontab -l > ~/.dotfiles/backups/periodic-backup/crontabs/crontab.save.dinh
+}
+
+# create a backup of codium keybindings and settings
+function backup-codium(){
+    codium --list-extensions > ~/.dotfiles/backups/periodic-backup/codium/extensions_list.txt
+	cp ~/.config/VSCodium/User/{keybindings,settings}.json ~/.dotfiles/backups/periodic-backup/codium
 }
 
 # do a full backup
@@ -143,6 +149,7 @@ function backup-full(){
 	backup-installed-software
 	backup-system
 	backup-crontab
+    backup-codium
 }
 
 # sound alarm
@@ -154,12 +161,6 @@ function alarm-on(){
 # cat and less function
 function cless(){
 	cat "$1" | less
-}
-
-# create a backup of codium keybindings and settings
-function backup-codium(){
-	cp ~/.config/VSCodium/User/{keybindings,settings}.json ~/.dotfiles/backups/periodic-backup/codium
-	codium --list-extensions > ~/.dotfiles/backups/periodic-backup/codium/extensions_list.txt
 }
 
 # web-admision

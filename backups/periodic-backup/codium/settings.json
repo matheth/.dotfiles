@@ -1,25 +1,26 @@
 {
-  "editor.formatOnSave": true,
-  "editor.wordWrap": "on",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "diffEditor.wordWrap": "on",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.codeActionsOnSave": {
-    // For ESLint
-    "source.fixAll.eslint": true,
-    // For TSLint
-    "source.fixAll.tslint": true,
-    // For Stylelint
-    "source.fixAll.stylelint": true,
-    "source.organizeImports": true
-  },
-  "editor.tabSize": 2,
-  "liveServer.settings.CustomBrowser": "chrome",
-  "workbench.startupEditor": "newUntitledFile",
-  "autoimport.filesToScan": "**/*.{ts,tsx,js,jsx}",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
-  },
-  "workbench.iconTheme": "vscode-great-icons"
-}
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "diffEditor.wordWrap": "on",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.codeActionsOnSave": {
+      // For ESLint
+      "source.fixAll.eslint": true,
+      // For TSLint
+      "source.fixAll.tslint": true,
+      // For Stylelint
+      "source.fixAll.stylelint": true,
+      "source.organizeImports": true
+    },
+    "editor.tabSize": 2,
+    "liveServer.settings.CustomBrowser": "chrome",
+    "workbench.startupEditor": "newUntitledFile",
+    "autoimport.filesToScan": "**/*.{ts,tsx,js,jsx}",
+    "workbench.editorAssociations": {
+      "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "workbench.iconTheme": "vscode-great-icons"
+  }
+  

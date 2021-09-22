@@ -8,6 +8,8 @@
   split_vert = <Shift><Alt>Right
 [profiles]
   [[default]]
+    background_darkness = 0.9
+    background_type = transparent
     cursor_color = "#aaaaaa"
     font = Monospace 15
     use_system_font = False

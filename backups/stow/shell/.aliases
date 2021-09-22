@@ -1,5 +1,5 @@
 alias aliases="vim ~/.aliases"
-alias functions="vim ~/.functions"
+alias functions_custom="vim ~/.functions"
 
 # ls 
 alias ll="ls -l"
@@ -63,9 +63,6 @@ alias dotfiles="cd ~/.dotfiles"
 
 # vimrc alias
 alias vimrc="vim ~/.vimrc"
-
-# kill alarm
-alias alarm-off="source ~/.zshrc;sleep 1s;kill $(ps aux | grep mplayer | grep -v grep | sed 's/matheth[ ]*//' | sed 's/  .*//')"
 
 # start python virtual env
 alias venv-start="source bin/activate"

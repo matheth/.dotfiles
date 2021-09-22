@@ -1,16 +1,10 @@
-alexandersage.angular1-code-snippets
-burkeholland.simple-react-snippets
 CoenraadS.bracket-pair-colorizer
 dbaeumer.vscode-eslint
-dsznajder.es7-react-js-snippets
 eamodio.gitlens
 emmanuelbeziat.vscode-great-icons
 esbenp.prettier-vscode
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
-James-Yu.latex-workshop
-kumar-harsh.graphql-for-vscode
-ms-azuretools.vscode-docker
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
