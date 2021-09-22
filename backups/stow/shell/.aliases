@@ -1,6 +1,9 @@
 alias aliases="vim ~/.aliases"
 alias functions_custom="vim ~/.functions"
 
+# for fish
+alias !!="$history[1]"
+
 # ls 
 alias ll="ls -l"
 alias la="ls -lah"
@@ -93,6 +96,5 @@ alias trebol="cd ~/Desktop/Trebol"
 
 # postgres trebol
 alias postgres-trebol="psql -h 10.97.96.3 -U admision -d admision4"
-
 
 

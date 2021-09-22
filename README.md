@@ -2,12 +2,12 @@
 
 ## Demo
 
-
-Bash Demo                  |  Zsh Demo
-:-------------------------:|:-------------------------:
-![](images/bash-demo.png)   |  ![](images/ohmyzsh-demo.png)
+|         Bash Demo         |           Zsh Demo           |
+| :-----------------------: | :--------------------------: |
+| ![](images/bash-demo.png) | ![](images/ohmyzsh-demo.png) |
 
 ## To restore files
+
 1. Install stow `sudo apt install stow`
 2. cd into home directory
 3. `rm -rf .dotfiles` if there is one
@@ -20,6 +20,7 @@ Bash Demo                  |  Zsh Demo
 10. change cursor to I-beam: Terminal -> right click -> preferences -> Cursor shape -> I beam
 
 All together:
+
 ```
     sudo apt install stow
     cd ~
@@ -53,6 +54,7 @@ All together:
 ### Backup explanation and commands
 
 #### Keyboard:
+
 [link to full explanation](https://askubuntu.com/questions/682513/how-to-backup-restore-system-custom-keyboard-shortcuts#844907)
 
 Gnome-Control-Center (used by Unity and Gnome Shell) stores its key bindings in the per-user Dconf database directories /org/gnome/desktop/wm/keybindings/ and /org/gnome/settings-daemon/plugins/media-keys/ (source).
@@ -61,30 +63,33 @@ The easiest way to keep them across system re-installations is to keep the per-u
 
 If you can't or won't keep your old Dconf database you can use the dconf command to export (“dump”) parts of it into a file and import (“load”) it later. The relevant Dconf directories are
 
-+ /org/gnome/desktop/wm/keybindings/ for pre-defined shortcuts and
-+ /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ for custom, user-defined shortcuts.
+- /org/gnome/desktop/wm/keybindings/ for pre-defined shortcuts and
+- /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ for custom, user-defined shortcuts.
 
 The following example saves the above Dconf directories to two files keybindings.dconf and custom-keybindings.dconf and then restores them from the same files:
-  
+
 ##### Backing up
 
 ```
-    dconf dump '/org/gnome/desktop/wm/keybindings/' > ~/.dotfiles/backups/.backups/keybindings.dconf
-    dconf dump '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' > ~/.dotfiles/backups/.backups/custom-keybindings.dconf
+    dconf dump '/org/gnome/desktop/wm/keybindings/' > ~/.dotfiles/backups/stow/backups/.backups/keybindings.dconf
+    dconf dump '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' > ~/.dotfiles/backups/stow/backups/.backups/custom-keybindings.dconf
 ```
 
 ##### Restoring configuration
+
 ```
-    dconf load '/org/gnome/desktop/wm/keybindings/' < ~/.dotfiles/backups/.backups/keybindings.dconf
-    dconf load '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' < ~/.dotfiles/backups/.backups/custom-keybindings.dconf
+    dconf load '/org/gnome/desktop/wm/keybindings/' < ~/.dotfiles/backups/stow/backups/.backups/keybindings.dconf
+    dconf load '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' < ~/.dotfiles/backups/stow/backups/.backups/custom-keybindings.dconf
 ```
 
 #### Installed software:
+
 [link to full explanation](https://www.nixtutor.com/linux/keep-a-backup-of-installed-packages/)
 
 ##### Backup
 
 We get only the list of packages
+
 ```
 	dpkg --get-selections | awk '{ print $1 }' > ~/.dotfiles/backups/.backups/installed-software.log
 ```
@@ -96,13 +101,12 @@ We get only the list of packages
 ```
 
 #### System backup
-[link to full explanation](https://www.addictivetips.com/ubuntu-linux-tips/back-up-the-gnome-shell-desktop-settings-linux/)
 
+[link to full explanation](https://www.addictivetips.com/ubuntu-linux-tips/back-up-the-gnome-shell-desktop-settings-linux/)
 
 ### Back Up System Settings (dconf)
 
 Creating a full backup with Dconf will allow you to save all Dconf settings and configurations, along with the Gnome Shell desktop environment. For most users this is overkill. However, if you’re paranoid and want to ensure that every setting is safe, this is the way to go.
-
 
 #### Backup
 
@@ -118,15 +122,14 @@ The settings dump is complete. The next step is to look over the contents of the
 	cat ~/.dotfiles/backups/.backups/full-backup
 ```
 
-If everything looks good, type clear and create a new folder in ~/.backups to hold the backup file. 
+If everything looks good, type clear and create a new folder in ~/.backups to hold the backup file.
 
 ```
 	mkdir -p ~/.backups
-	touch ~/.backups/full-backup 
+	touch ~/.backups/full-backup
 ```
 
 #### Restore Backup
-
 
 Download the \<file\> to your Linux PC and open up a terminal. In the terminal, use the cd command to access the files inside.
 
@@ -143,11 +146,13 @@ Start the restoration process by importing the Dconf backup file into the system
 ```
 
 ### Crontabs
+
 [link to full explanation](https://blog.pythian.com/how-to-efficiently-backup-and-restore-crontab/)
 
 #### Backup
 
 Backup crontab and display contents. Extra precaution in case crontab.save.dinh is removed.
+
 ```
 	crontab -l > ~/.dotfiles/crontabs/.crontabs/crontab.save.dinh
 ```
@@ -167,6 +172,7 @@ Backup crontab and display contents. Extra precaution in case crontab.save.dinh 
 ```
 
 ### Zsh
+
 #### Install zsh
 
 ```

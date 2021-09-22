@@ -111,3 +111,11 @@ function mongo-trebol -d "Mongo-trebol"
   trebol
   kubectl port-forward api-admision-mongo-stateful-set-1 27017:27017
 end
+
+function sudo -d "Improved sudo"
+    if test "$argv" = !!
+        eval command sudo $history[1]
+    else
+        command sudo $argv
+    end
+end
