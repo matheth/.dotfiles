@@ -106,11 +106,11 @@ function api-admision -d "Api-admision"
   npm run start:dev
 end
 
-# Mongo-trebol
+# mongo-trebol
 function mongo-trebol -d "Mongo-trebol"
   trebol
   kubectl port-forward api-admision-mongo-stateful-set-1 27017:27017
-end
+end 
 
 function sudo -d "Improved sudo"
     if test "$argv" = !!
