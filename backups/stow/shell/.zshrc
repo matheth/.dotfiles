@@ -4,7 +4,7 @@ export PATH=$PATH:/snap/bin
 export PATH=/sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/matheth/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 
 # Set name of the theme to load 
@@ -24,8 +24,6 @@ source ~/.profile
 # done;
 # unset file;
 
-# command not found suggestions
-source /etc/zsh_command_not_found
 
 # use hyphen-insensitive completion
 HYPHEN_INSENSITIVE="true"
