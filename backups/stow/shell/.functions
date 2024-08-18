@@ -33,18 +33,12 @@ function gcmp(){
 # clone a repository and save the location to a file
 function gcl(){
    git clone "$1"
-   name_of_repo=$(echo "$1" | sed -e 's/git@github\.com:[a-zA-Z0-9]*\///g' -e 's/.git//g' -)
-   if ! $? ; then
-       parent_directory=$(pwd)
-       full_path="$parent_directory/$name_of_repo"
-       grep $name_of_repo ~/.git-repos-globally.txt &>/dev/null || echo $full_path >> ~/.git-repos-globally.txt
-   fi
 }
 
 # initialize an empty repository and save the location to a file
 function gi(){
    git init
-    current_dir=$(pwd)
+   current_dir=$(pwd)
    echo $current_dir
    grep $current_dir ~/.git-repos-globally.txt &>/dev/null || echo $current_dir >> ~/.git-repos-globally.txt
 }
@@ -163,22 +157,13 @@ function cless(){
 	cat "$1" | less
 }
 
-# web-admision
-function web-admision(){
-    trebol
-	repositories/web-admision
-    npm start
+# modify pip behaviour
+pip() {
+    if [ "$1" = "install" ]; then
+        shift
+        command pip install --break-system-packages "$@"
+    else
+        command pip "$@"
+    fi
 }
 
-# api-admision
-function api-admision(){
-    trebol
-	repositories/api-admision
-    npm run start:dev
-}
-
-# mongo-trebol
-function mongo-trebol(){
-    trebol
-    kubectl port-forward api-admision-mongo-stateful-set-1 27017:27017
-}

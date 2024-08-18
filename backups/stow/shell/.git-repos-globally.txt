@@ -26,3 +26,6 @@
 /home/matheth/Desktop/Trebol/repositories/gitlab.trebol-it.com:alemana/telemedicina/api-telemedicina
 /home/matheth/Desktop/Trebol/repositories/gitlab.trebol-it.com:alemana/admision/postgres
 /home/matheth/Desktop/github/github.com:agustin-arias/Resume
+/home/matheth/Desktop/https:/hub.com/matheth/optimizacion2
+/home/matheth/https:/hub.com/matheth/project_euler
+/home/matheth/Desktop/https:/hub.com/matheth/Resume

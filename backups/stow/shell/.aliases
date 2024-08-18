@@ -49,6 +49,7 @@ alias gd3="gd HEAD~3"
 alias gck="git checkout"
 alias gap="git add -p"
 alias gcv="git commit -v"
+
 # check weather
 alias weather="gnome-weather"
 
@@ -73,9 +74,6 @@ alias venv-start="source bin/activate"
 # end python virtual env
 alias venv-end="deactivate"
 
-# start angular project with boilerplate
-alias angular-seed="git clone --depth=1 https://github.com/angular/angular-seed.git"
-
 # check what networks are around you (after activating monitor mode with sudo airmon-ng <INTERFACE> (you can get the interface with sudo airmong-ng))
 alias networks="sudo airodump-ng wlp1s0mon --m"
 alias dos-start="~/Desktop/wifi-experiments/dos-start.sh"
@@ -90,11 +88,4 @@ alias cdG="cdg"
 
 # cd resume
 alias resume="cd ~/Desktop/github/resume"
-
-# cd trebol folder
-alias trebol="cd ~/Desktop/Trebol"
-
-# postgres trebol
-alias postgres-trebol="psql -h 10.97.96.3 -U admision -d admision4"
-
 

@@ -37,3 +37,4 @@ export EDITOR="$VISUAL"
 export PATH=$PATH:/snap/bin
 
 export PATH=/usr/local/bin:$PATH
+source /etc/zsh_command_not_found
