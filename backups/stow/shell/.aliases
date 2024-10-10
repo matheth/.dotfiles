@@ -80,7 +80,7 @@ alias dos-start="~/Desktop/wifi-experiments/dos-start.sh"
 alias dos-stop="~/Desktop/wifi-experiments/dos-stop.sh"
 
 # python alias
-alias python="python3"
+# alias python="python3"
 
 # cd github
 alias cdg="cd ~/Desktop/github"
@@ -88,4 +88,3 @@ alias cdG="cdg"
 
 # cd resume
 alias resume="cd ~/Desktop/github/resume"
-
