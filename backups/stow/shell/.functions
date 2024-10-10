@@ -1,4 +1,5 @@
-function remitz{
+# remitz master function
+function remitz() {
 	# Log into github with ssh keys for remitz
 	eval "$(ssh-agent -s)"
 	ssh-add ~/.ssh/id_remitz
