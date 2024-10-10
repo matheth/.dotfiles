@@ -1,16 +1,26 @@
 # remitz master function
 function remitz() {
+	echo "Logging into gitub, enter password..."
 	# Log into github with ssh keys for remitz
 	eval "$(ssh-agent -s)"
 	ssh-add ~/.ssh/id_remitz
 	ssh -T git@github.com
-
+	
+	echo "Opening remitz folder with vscode..."
 	# Open repository with vscode
 	code ~/Desktop/remitz
 
 	# wait for vscode to load
 	sleep 2
 	
+	echo "Opening slack..."
+	# open slack
+	slack
+	
+	# wait for slack to load
+	sleep 2 
+	
+	echo "Opening firefox Remitz profile"
 	# Open firefox Remitz profile
 	nohup firefox -P Remitz &
 }
