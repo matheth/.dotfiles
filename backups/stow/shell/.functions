@@ -1,3 +1,16 @@
+function uba() {
+	echo "Openning uba folder with vscode..."
+	# open vscode 
+	code ~/Desktop/uba
+	
+	# wait for vscode to open
+	sleep 2 
+	
+	echo "Openning UBA firefox profile..."
+	# open UBA profile
+	nohup firefox -P UBA &
+}
+
 # remitz master function
 function remitz() {
 	echo "Logging into gitub, enter password..."
