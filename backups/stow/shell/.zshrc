@@ -38,3 +38,6 @@ export PATH=$PATH:/snap/bin
 
 export PATH=/usr/local/bin:$PATH
 source /etc/zsh_command_not_found
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(pyenv init -)"
