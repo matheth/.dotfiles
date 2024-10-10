@@ -1,3 +1,19 @@
+function remitz{
+	# Log into github with ssh keys for remitz
+	eval "$(ssh-agent -s)"
+	ssh-add ~/.ssh/id_remitz
+	ssh -T git@github.com
+
+	# Open repository with vscode
+	code ~/Desktop/remitz
+
+	# wait for vscode to load
+	sleep 2
+	
+	# Open firefox Remitz profile
+	nohup firefox -P Remitz &
+}
+
 # Create a new directory and enter it
 function mkd() {
     mkdir -p "$@" && cd "$_";
@@ -155,15 +171,5 @@ function alarm-on(){
 # cat and less function
 function cless(){
 	cat "$1" | less
-}
-
-# modify pip behaviour
-pip() {
-    if [ "$1" = "install" ]; then
-        shift
-        command pip install --break-system-packages "$@"
-    else
-        command pip "$@"
-    fi
 }
 
