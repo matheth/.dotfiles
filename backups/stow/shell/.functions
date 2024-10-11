@@ -11,17 +11,35 @@ function uba() {
 	nohup firefox -P UBA &
 }
 
-# remitz master function
-function remitz() {
+function remitz_github_login() {
 	echo "Logging into gitub, enter password..."
 	# Log into github with ssh keys for remitz
 	eval "$(ssh-agent -s)"
 	ssh-add ~/.ssh/id_remitz
 	ssh -T git@github.com
+}
+
+function remitz_firefox () {
+	# Extract URLs from the "work" bookmark folder
+	sqlite3 ~/places.sqlite.backup "
+    	SELECT moz_places.url FROM moz_places
+	    JOIN moz_bookmarks ON moz_places.id = moz_bookmarks.fk
+   		WHERE moz_bookmarks.parent IN (
+	    SELECT id FROM moz_bookmarks WHERE title='work'
+	);" > ~/work_links.txt 
 	
+	nohup firefox -P Remitz $(cat ~/work_links.txt) &
+
+	sleep 2
+}
+
+# remitz master function
+function remitz() {
+	remitz_github_login	
+
 	echo "Opening remitz folder with vscode..."
 	# Open repository with vscode
-	code ~/Desktop/remitz
+	code ~/Desktop/remitz/scrapers
 
 	# wait for vscode to load
 	sleep 2
@@ -34,8 +52,7 @@ function remitz() {
 	sleep 2 
 	
 	echo "Opening firefox Remitz profile"
-	# Open firefox Remitz profile
-	nohup firefox -P Remitz &
+	remitz_firefox
 }
 
 # Create a new directory and enter it
